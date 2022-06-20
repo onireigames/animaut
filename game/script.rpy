@@ -3,31 +3,105 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
-
+define host = Character("Host")
+define guest = Character("Guest")
 
 # The game starts here.
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    scene bg guestroom
 
-    scene bg room
+    show guest chatting at left
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    "Chatting..."
 
-    show eileen happy
+    guest "sup"
 
-    # These display lines of dialogue.
+    show host unknown at right
 
-    e "You've created a new Ren'Py game."
+    host "nm"
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    guest "lies"
 
-    # This ends the game.
+    host "ok fine i'll explain"
+
+    jump act2
+
+label act2:
+    scene bg entrance
+    with Dissolve(.5)
+    pause .5
+
+    show guest armor at left
+
+    show host armor at right
+
+    guest "Cool place..."
+
+    host "Blah blah... (talking about the place)"
+
+    guest "Blah blah blah... (commenting on it)"
+
+    "Hmmmmm... (guest's unsaid thoughts about the place)"
+
+    "Etc. etc."
+
+    jump act3
+
+
+label act3:
+    scene bg beach
+    with Dissolve(.5)
+    pause .5
+
+    show guest armor at left
+
+    show host armor at right
+
+    host "..."
+
+    show host almostnaked
+
+    host "aaaaAAAAAA *takes some armor off*"
+
+    show host naked
+
+    host "AAAAAAAAAAAAAAAA *takes the rest of the armor off*"
+
+    guest "L-lewd!"
+
+    host "It's ok, this is marked as an NSFW game, I think."
+
+    show host molten
+
+    host "Anyway, where was I... AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa *melts*"
+
+    guest "oof..."
+
+    host "..."
+
+    hide guest
+    show host pickedup
+
+    scene black
+    with Pixellate(.5, 5)
+    pause .5
+
+    "It's only fair if I do the same..."
+
+    jump act4
+
+
+label act4:
+    scene bg guestlandscape
+    with Pixellate(.5, 5)
+    pause .5
+
+    show guest holdhost at center
+
+    host "A."
+
+    guest "A."
 
     return
