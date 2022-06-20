@@ -1,0 +1,5 @@
+# RenPy
+cache/
+saves/
+*.rpyc
+*.rpymc
