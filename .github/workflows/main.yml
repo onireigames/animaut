@@ -28,7 +28,7 @@ jobs:
       - name: Lint project
         uses: ProjectAliceDev/renpy-lint-action@master
         with:
-          sdk-version: '7.4.11.2266'
+          sdk-version: '7.4.11'
           project-dir: '.'
         env:
           SDL_AUDIODRIVER: dummy
