@@ -11,53 +11,65 @@ define unknown = Character("<Unknown>")
 # The game starts here.
 
 label start:
-    "For how long will I keep failing...?"
+    "How long will I keep failing...?"
 
     "Why am I even doing this to myself...?"
 
     scene bg guestroom
 
-    show guest sitting_frustrated at left with hpunch
+    show guest sitting frustrated at left with hpunch
     guest "...Ugh! Not again!"
 
     "This stupid ledge again! I swear, they should perform tests for sadistic tendencies on every level designer. Or maybe they do, and that's exactly how they hire them."
 
-    show guest sitting_normal
+    show guest sitting
     "I think I'll just go to sleep. Wait... oh no... the exam, I completely forgot about it! Well, it's too late to prevent that! I might as well actually beat this level, at least."
     "And I feel like I'm forgetting something else, too..... oh! That shelter volunteer work [friend] invited me to."
 
+    show guest sitting determined
     guest "Alright, I got this!"
 
-    "Just one more try and I'll go to sleep and reply to her tomorrow. I'd reply to her now but I'd rather she didn't see a rogue message from me this late at night."
-    "It's been, what... a few days already? And what was that shelter called, again? FPS... FPS...something... hmm, ironic acronym, isn't-"
+    "Just one more try and I'll go to sleep and reply to her tomorrow."
+    "It's been, how long... a few days already? And what was that shelter called, again? FPS... FPS...something... hmm, ironic acronym, isn't-"
 
-    show guest sitting_frustrated with hpunch
-    show guest sitting_frustrated
+    show guest sitting frustrated with hpunch
+    show guest sitting frustrated
     guest "AAAAA!"
 
-    show guest sitting_normal
+    show guest sitting
     "Okay, this time I was just distracted. I think I deserve one more try."
 
     "..."
 
-    show host sitting_unknown at right
+    show unknown sitting at right with vpunch
     unknown "{b}<PING>{/b}"
 
-    show guest sitting_normal
-    "Oh, no, [friend]'s on to me, isn't-"
+    show guest sitting nervous
+    "Oh, no, [friend]'s on to me, isn't she..."
 
-    show guest sitting_frustrated with hpunch
-    hide host
+    hide unknown
+    "I can't just interrupt my flow right now, though..."
+
+    "..."
+
+    show guest sitting frustrated with hpunch
     guest "AAAAA!"
 
-    "Not again! Alright, I give up."
+    "Not again! I guess I don't got this, after all. I give up."
 
-    show host sitting_unknown at right
+    show unknown menacing with vpunch
+    unknown "{b}<PING>{/b}"
+
+    "Hmm. I should just tell [friend] I'd love to go but I'm too busy. I have so much work and studying to do these days. I really hope she isn't mad at me for ghosting her, at least."
+
+    hide unknown
+    show host sitting at right
     unknown "> {i}Hi [guest]{/i}\n> {i}Sorry, you're probably asleep...{/i}"
 
-    show host sitting
+    show guest sitting
     "Whew, it's just [host]. It's been a while..."
 
+    show guest sitting smirk
     guest "> {i}sup{/i}\n> {i}and dw, when was the last time i was even asleep at this time? it's only 1am{/i}"
 
     "{b}<The conversation progresses until Host mentions something that's troubling her and Guest presses on it>{/b}"
