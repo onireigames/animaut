@@ -11,66 +11,90 @@ define unknown = Character("<Unknown>", who_color="#E500FF")
 # The game starts here.
 
 label start:
-    "How long will I keep failing...?"
+    "{b}<MUSIC: Vague ambient sounds that give a sense of emptiness>{/b}"
 
+    "How long will I keep failing...?"
     "Why am I even doing this to myself...?"
 
     scene bg guestroom
+    with Dissolve(1)
+
+    "{b}<MUSIC: Chill, either with a fast and light bass melody or something that emulates the same feel, think {a=https://youtu.be/ZZ-mtVyjBqI}this{/a} or perhaps the chill tracks from {a=https://youtu.be/5-K8R1hDG9E}here{/a}>{/b}"
+    "Maybe I am a masochist after all."
+    "At least this time it's going way better. I got this!"
+    pause 1
 
     show guest sitting frustrated at left with hpunch
-    guest "...Ugh! Not again!"
+    guest "Ugh! Not again!"
+    "...I don't got this."
 
-    "This stupid ledge again! I swear, they should perform tests for sadistic tendencies on every level designer. Or maybe they do, and that's exactly how they hire them."
+    "This stupid ledge again! I swear, they should screen level designers for sadistic tendencies. Or maybe they do, and that's exactly how they hire them."
+
+    show guest sitting smirk
+    "Or maybe you just got too full of yourself, dumbass."
 
     show guest sitting
-    "I think I'll just go to sleep. Wait... oh no... the exam, I completely forgot about it! Well, it's too late to prevent that! I might as well actually beat this level, at least."
-    "And I feel like I'm forgetting something else, too..... oh! That shelter volunteer work [friend] invited me to."
+    "Anyway, I'm so done with this. I think I'll just go to sleep."
+
+    pause 2
+    show guest sitting nervous
+    "Wait... oh no... how did I even forget there was an exam tomorrow?! I was supposed to be preparing for it."
+    "Not to mention \"normal\" people get ready weeks in advance, not the day before."
+
+    show guest sitting smirk
+    "Well, it's too late for that! I might as well actually beat this level, at least."
+    show guest sitting
+    "And I feel like I'm forgetting something else, too. Maybe it's just a weird sense of deja-vu."
 
     show guest sitting determined
-    guest "Alright, I got this!"
+    guest "Alright, let's go!"
 
-    "Just one more try and I'll go to sleep and reply to her tomorrow."
-    "It's been, how long... a few days already? And what was that shelter called, again? FPS... FPS...something... hmm, ironic acronym, isn't-"
-
-    show guest sitting frustrated with hpunch
-    show guest sitting frustrated
-    guest "AAAAA!"
-
+    "It's muscle memory at this point, I can't possibly mess it up."
     show guest sitting
-    "Okay, this time I was just distracted. I think I deserve one more try."
-
-    "..."
-
+    pause 3
+    show guest sitting frustrated
     show unknown sitting at right with vpunch
     unknown "{b}<PING>{/b}"
 
+    show guest sitting
+    "Oh no..."
     show guest sitting nervous
-    "Oh, no, [friend]'s on to me, isn't she..."
+    "Oh no oh no oh no oh no oh no oh no oh no"
+    "Now I remember. It's probably [friend]. No, it's {b}definitely{/b} [friend]!"
+    show guest sitting despairing
+    "That's what you get for not replying to her for at least a few days, especially about an invitation to such wholesome work. Idiot..."
 
     hide unknown
-    "I can't just interrupt my flow right now, though..."
+    show guest sitting frustrated
+    "No, I can't just interrupt my flow right now. Focus!"
 
-    "..."
+    pause 1
+    show guest sitting
+    "And what was that shelter called, again? FPS... FPS...something... hmm, ironic acronym, isn't it?"
 
+    pause 2
     show guest sitting frustrated with hpunch
     guest "AAAAA!"
 
-    "Not again! I guess I don't got this, after all. I give up."
+    "Not again! Okay, this time I was just distracted. I think I deserve one more try."
 
+    show guest sitting nervous
     show unknown menacing with vpunch
     unknown "{b}<PING>{/b}"
 
-    "Hmm. I should just tell [friend] I'd love to go but I'm too busy. I have so much work and studying to do these days. I really hope she isn't mad at me for ghosting her, at least."
+    show guest sitting despairing
+    "There's no escaping [friend] now, is there? I should just tell her I'd love to go but I'm too busy. I really do have so much work to do these days. I really hope she isn't mad at me for ignoring her, at least."
 
     hide unknown
+    show guest sitting nervous
     show host sitting at right
-    unknown "> {i}Hi [guest]{/i}\n> {i}Sorry, you're probably asleep...{/i}"
+    unknown "> {i}Hi, [guest]{/i}\n> {i}Sorry, you're probably asleep...{/i}"
 
-    show guest sitting
-    "Phew, it's just [host]. It's been a while..."
+    show guest sitting relieved
+    "Phew, it's just [host]. I live to see another day!"
 
     show guest sitting smirk
-    guest "> {i}sup{/i}\n> {i}and dw, when was the last time i was even asleep at this time? it's only 1am{/i}"
+    guest " > {i}sup{/i}\n > {i}it's been a while{/i}\n > {i}and dw, when was the last time i was even asleep at this time? it's only 1am{/i}"
 
     "{b}<The conversation progresses until [host] mentions something that's troubling her and Guest presses on it>{/b}"
 
