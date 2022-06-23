@@ -13,8 +13,11 @@ define unknown = Character("<Unknown>", who_color="#E500FF")
 label start:
     "{b}<MUSIC: Vague ambient sounds that give a sense of emptiness>{/b}"
 
+    "{b}<An image of [guest]'s inner landscape - her sitting or lying on a rock in the middle of the ocean, like the rocks around Scarborough shoal>{/b}"
     "How long will I keep failing...?"
     "Why am I even doing this to myself...?"
+    "{b}<A close-up image of her>{/b}"
+    "I just need some time to reflect..."
 
     scene bg guestroom
     with Dissolve(1)
@@ -47,7 +50,7 @@ label start:
     "And I feel like I'm forgetting something else, too. Maybe it's just a weird sense of deja-vu."
 
     show guest sitting determined
-    guest "Alright, let's go!"
+    guest "Alright, let's go! Last chance!"
 
     "It's muscle memory at this point, I can't possibly mess it up."
     show guest sitting
@@ -85,16 +88,20 @@ label start:
     show guest sitting despairing
     "There's no escaping [friend] now, is there? I should just tell her I'd love to go but I'm too busy. I really do have so much work to do these days. I really hope she isn't mad at me for ignoring her, at least."
 
-    hide unknown
     show guest sitting nervous
-    show host sitting at right
     unknown "> {i}Hi, [guest]{/i}\n> {i}Sorry, you're probably asleep...{/i}"
 
     show guest sitting relieved
+    show host sitting at right
+    hide unknown
     "Phew, it's just [host]. I live to see another day!"
 
     show guest sitting smirk
     guest " > {i}sup{/i}\n > {i}it's been a while{/i}\n > {i}and dw, when was the last time i was even asleep at this time? it's only 1am{/i}"
+
+    host " > {i}Oh, sorry I forgot about your sleep schedule{/i}\n > {i}Or lack thereof?{/i}"
+
+    guest " > {i}{/i}"
 
     "{b}<The conversation progresses until [host] mentions something that's troubling her and Guest presses on it>{/b}"
 
@@ -150,11 +157,11 @@ label act3:
 
     show host almostnaked
 
-    host "{b}<Talks about something she agonizes about and cries; *takes some armor off*>{/b}"
+    host "{b}<Is honest about something while smiling slightly and tearing up; *takes some armor off*>{/b}"
 
     show host naked
 
-    host "{b}<Talks about something she agonizes about and cries; *takes the rest of her armor off*>{/b}"
+    host "{b}<Talks more, breaking down even more; *takes the rest of her armor off*>{/b}"
 
     guest "L-lewd!"
 
@@ -164,19 +171,22 @@ label act3:
 
     host "Anyway, where was I... AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa *melts*"
 
-    guest "{b}<Stays quiet, afraid of saying something wrong; she looks away and reflects on what has just happened>{/b}"
-
-    host " > Sorry, I didn't want to bother you with this...\n > It's already 3am, sorry for keeping you up"
-
     scene black
     with Pixellate(.5, 5)
     pause .5
+    guest "{b}<Stays quiet, afraid of saying something wrong; she looks away and reflects on what has just happened>{/b}"
 
-    "No, {b}I{/b} am sorry..."
+    host " > Sorry, I didn't want to bother you with this...\n > It's so late, sorry for keeping you up"
+
+    "Why is she sorry?! {b}I{/b} am sorry."
+
+    "Idiot! You're leaving her hanging like this?!"
+
+    "I just don't know what to say..."
 
     guest " > wait\n > are you still there?"
 
-    "{b}Not sure how to show this, but [host] sees [guest]'s messages and continues talking to her, giving her a chance to prove that she did care about [host]'s wellbeing despite appearing not to care when she broke down.. and something else - I forgot what{/b}"
+    "{b}Not sure how to show this, but [host] sees [guest]'s messages and continues talking to her, giving her a chance to amend the situation... and something else - I forgot what{/b}"
 
     jump act4
 
