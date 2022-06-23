@@ -63,7 +63,7 @@ label start:
     "Oh no..."
     show guest sitting nervous
     "Oh no oh no oh no oh no oh no oh no oh no"
-    "Now I remember. It's probably [friend]. No, it's {b}definitely{/b} [friend]!"
+    "Now I remember. It wasn't deja-vu after all. It's probably [friend]. No, it's {b}definitely{/b} [friend]!"
     show guest sitting despairing
     "That's what you get for not replying to her for at least a few days, especially about an invitation to such wholesome work. Idiot..."
 
@@ -101,7 +101,7 @@ label start:
 
     host " > {i}Oh, sorry I forgot about your sleep schedule{/i}\n > {i}Or lack thereof?{/i}"
 
-    guest " > {i}{/i}"
+    "{b}<It's important to make the reader care about [host] during this conversation>{/b}"
 
     "{b}<The conversation progresses until [host] mentions something that's troubling her and Guest presses on it>{/b}"
 
@@ -137,9 +137,14 @@ label act2:
     host "{b}<Talks about how she has kept a secret about her severe mood swings and her vain attempts to quell them>{/b}"
     "{b}<[guest] reflects on this place, too>{/b}"
 
-    "{b}<[guest] asks a question that lead her to find out about a major source of [host]'s torment - her regret and shock about her young self accidentally killing a cat she loved, and/or one that died recently, for the loss of which no drugs have been able to help>{/b}"
-    "{b}<There can also be a bit about [host]'s sister/cousin being cruel to animals>{/b}"
-    "{b}<If there is a cat, it can also appear as a twisted but cute character>{/b}"
+    scene bg black
+    with Dissolve(.5)
+    pause .5
+
+    "{b}<Image of [guest]'s hand reaching in near-darkness, with only some outlines being visible>{/b}"
+    "{b}<[host] has a sister who was cruel to animals, especially cats, and never got punished for it>{/b}"
+    "{b}<The two discuss how cute cats are and how animals are treated unjustly by people who should know better{/b}"
+    "{b}<While feeling around, [guest] feels a cat, which slowly becomes visible in her view>{/b}"
 
     jump act3
 
@@ -149,76 +154,116 @@ label act3:
     with Dissolve(.5)
     pause .5
 
-    show guest armor at left
+    show guest armor cat at left
+    "{b}<The cat [guest] is holding is more grotesque than what she imaged>{/b}"
 
     show host armor at right
 
-    host "..."
-
-    show host almostnaked
-
-    host "{b}<Is honest about something while smiling slightly and tearing up; *takes some armor off*>{/b}"
-
-    show host naked
-
-    host "{b}<Talks more, breaking down even more; *takes the rest of her armor off*>{/b}"
-
-    guest "L-lewd!"
-
-    host "It's ok, this is marked as an NSFW game, I think."
-
-    show host molten
-
-    host "Anyway, where was I... AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa *melts*"
+    "{b}<[guest] asks a question that leads her to find out about a great source of [host]'s torment - a shocking event which happened a long time ago>{/b}"
+    "{b}<While digging in a compost pile at the countryside, [host] heard a squeak - there was a litter of mice inside, all of whom except one were eviscerated by her actions>{/b}"
+    "{b}<Nursed the lone survivor, Beep - a blind and tiny mouse pup - back to life: gave it special milk with no lactose, kept it warm throughout the cold winter>{/b}"
+    "{b}<However, one fateful day, the mousey jumped out of its box and [host], worried her cat would get to the mouse before her and eat it, accidentally stepped on the mousey>{/b}"
+    "{b}<The mouse was barely alive, and had to be given a mercy killing>{/b}"
+    "{b}<While [host] is talking about this, her armor falls apart and she melts>{/b}"
 
     scene black
     with Pixellate(.5, 5)
     pause .5
     guest "{b}<Stays quiet, afraid of saying something wrong; she looks away and reflects on what has just happened>{/b}"
 
-    host " > Sorry, I didn't want to bother you with this...\n > It's so late, sorry for keeping you up"
+    host " > {i}Sorry, I didn't want to bother you with this...{/i}\n > {i}It's so late, sorry for keeping you up{/i}"
 
-    "Why is she sorry?! {b}I{/b} am sorry."
+    "Why is she sorry?! {b}I{/b} should be sorry for being so quiet."
 
     "Idiot! You're leaving her hanging like this?!"
 
     "I just don't know what to say..."
 
-    guest " > wait\n > are you still there?"
+    pause 1
+    guest " > {i}wait{/i}"
 
-    "{b}Not sure how to show this, but [host] sees [guest]'s messages and continues talking to her, giving her a chance to amend the situation... and something else - I forgot what{/b}"
+    pause 3
+    "No reply..."
 
     jump act4
 
 
 label act4:
-    scene bg guestlandscape
+    scene bg guestbed
     with Pixellate(.5, 5)
     pause .5
 
-    show guest holdhost at center
+    "{b}<[guest] is in her bed, her face too dark to see, and a digital clock showing that it's now 5am, and a lit phone beside her>{/b}"
+    "No matter how many times I check, it won't make her reappear."
+    "Any rational person would just go to sleep, not spend 2 hours waiting for nothing like an idiot."
 
-    host "A."
+    scene bg guestlandscape
+    with Dissolve(.5)
+    pause .5
 
-    guest "Oh, by the way, there's something you might be interested in..."
+    "{b}<[guest] is seen lying on her rock with her blindfold in her hand, crying with her eyes open and a blank stare>{/b}"
+    "{b}<[guest]'s pose matches the previous background perfectly>{/b}"
+    "I can't sleep like this."
+
+    scene bg guestlandscapereach
+    with Dissolve(.5)
+    pause .5
+    "{b}<A close view of [guest]'s arm reaching into the murky water>{/b}"
+    guest " > {i}are you still there?{/i}"
+    guest " > {i}well, obviously not{/i}\n > {i}but i dont know what else to do{/i}"
+    "I don't even know what I'm doing."
+    guest " > {i}sorry im such an idiot{/i}"
+
+    pause 1
+    "Well, okay, I do know what I'm doing - one of those things you tend to regret in the morning when you can think clearly."
+
+    pause 3
+    "{b}<The background changes to [host]'s arm reaching out from under the water and grabbing [guest]'s forearm firmly>{/b}"
+    host " > {i}Hi{/i}" with vpunch
+    pause 1
+    "{b}<The background changes yet again, to [host]'s other arm doing the same>{/b}"
+    host " > {i}Can we talk?{/i}" with vpunch
+
+    scene black
+    with Dissolve(.5)
+    pause .5
+
+    guest " > {i}youre still up?!{/i}\n > {i}but yes, please, let's talk{/i}"
+
+    "{b}<The background is something abstract, maybe a bunch of watery colours, and melting clocks (à la Salvador Dali)>{/b}"
+    "{i}I don't even know how much time we spent talking, but she fell asleep a little after the sun had risen{/i}"
+
+    "{b}<The background is now them sitting on the rock, which now is surrounded by land (the water level has lowered), and [guest] is being [host]'s lap pillow and petting her hair>{/b}"
+    guest "Sleep well - or at least as well as you possibly can after pulling an all-nighter."
+    guest "And, by the way..."
+    guest " > {i}when you wake up - theres something you might be interested in... c;{/i}"
 
     jump act5
 
 
 label act5:
-    # TODO: Actually should be the FPS (Fox Peak Sanctuary)
     scene bg guestlandscape
     with Dissolve(.5)
     pause .5
 
-    show friend at center
-    friend "Oh, you both made it! (Even you, [guest]!) Welcome to Fox Peak Sanctuary!"
+    "{b}<The background is Fox Peak Sanctuary - a nonprofit which rescues foxes>{/b}"
+    show friend at right
+    friend "Oh, you both made it! Welcome to Fox Peak Sanctuary!"
 
-    show guest at left
-    show host at right
+    show guest at center
+    guest "Hello."
 
-    guest "Oh, shut up!"
+    show host at left
+    host "Hi!"
 
-    host "A."
+    "{b}<They discuss some stuff about what they're supposed to do there for the animals>{/b}"
+    "{b}<Or perhaps they brought some money and got to see first-hand how professionals do their work and maybe were taught a few things about caring for animals there>{/b}"
+
+    scene bg guestlandscape
+    with Dissolve(.5)
+    pause .5
+
+    "{b}<The background is a close-up of [host] and [guest] h*ndholding>{/b}"
+    "{b}<[guest] should say some kind of a closing statement>{/b}"
 
     return
