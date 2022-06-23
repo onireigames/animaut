@@ -97,19 +97,58 @@ label start:
     "Phew, it's just [host]. I live to see another day!"
 
     show guest sitting smirk
-    guest " > {i}sup{/i}\n > {i}it's been a while{/i}\n > {i}and dw, when was the last time i was even asleep at this time? it's only 1am{/i}"
+    guest " > {i}sup{/i}\n > {i}it's been a while{/i}\n > {i}and dw, it's only 2am{/i}"
 
-    host " > {i}Oh, sorry I forgot about your sleep schedule{/i}\n > {i}Or lack thereof?{/i}"
+    host " > {i}Oh, sorry, I forgot about your sleep schedule{/i}\n > {i}Or lack thereof?{/i}"
 
-    "{b}<It's important to make the reader care about [host] during this conversation>{/b}"
+    guest " > {i}at least i follow my nonexistent sleep schedule{/i}\n > {i}arent {b}you{/b} supposed to be asleep?{/i}"
+    host " > {i}Yeah{/i}"
 
-    "{b}<The conversation progresses until [host] mentions something that's troubling her and Guest presses on it>{/b}"
+    guest " > {i}need help with something?{/i}"
+    host " > {i}No{/i}"
+    guest " > {i}dont tell me you forgot to study too{/i}"
+    "Who am I kidding?! If there's anyone crazy enough to prepare weeks in advance, it's her."
 
-    "{b}<Also, it may be unusual for [host] to be awake at 1am, in which case [guest] should take note of that and ask her why she's up so late>{/b}"
+    guest " > {i}bored?{/i}"
+    show guest sitting
+    "I wish. Even if she were, she only plays slow-paced games like Meow Meadow. I don't get what she sees in them."
+
+    host " > {i}No{/i}"
+    "This isn't like her at all. At least she didn't notice my slip-up about being a delinquent who doesn't study. Or she's just used to it by now..."
+    show guest sitting nervous
+    host " > {i}Sorry for distracting you, forget about this.{/i}\n > {i}Goodnight!{/i}"
+
+    guest " > {i}...{/i}"
+    show guest sitting frustrated
+    guest " > {i}goodnight my ass{/i}\n > {i}youre not going to sleep till youve told me whats up{/i}"
+
+    show guest sitting nervous
+    host " > {i}I just felt like I was dying. I wasn't thinking straight because I had just woken up.{/i}"
+    guest " > {i}and you messaged me instead of calling an ambulance?{/i}"
+
+    host " > {i}I wasn't actually dying! I only had to calm down.{/i}"
+    show guest sitting
+    "I'm glad..."
+    guest " > {i}i was your go-to option for calming down?{/i}"
+    show guest sitting smirk
+    guest " > {i}why dont you just marry me then?{/i}"
+    show guest sitting nervous
+    guest " > {i}jk jk{/i}"
+    "What am I doing?! This isn't the time to joke around."
+
+    show guest sitting
+    host " > {i}Sorry if it's like I was using you or something{/i}\n > {i}I tried everything else before that{/i}"
+
+    scene bg black
+    with Dissolve(.5)
+    pause 1
+    guest " > {i}everything else?{/i}"
 
     jump act2
 
 label act2:
+    host "Everything else - I close my eyes..."
+
     scene bg entrance
     with Dissolve(.5)
     pause .5
@@ -118,11 +157,19 @@ label act2:
 
     show host armor at right
 
-    "{b}<The background is an oasis>{/b}"
+    "{b}<The background is an oasis - a park, surrounded by a desert>{/b}"
+    host "...I breathe slowly, and imagine I'm in a nice place with trees. I'd play some ambient sounds too if I could do that quickly enough."
+
+    "{b}<The oasis dissolves, revealing a barren landscape>{/b}"
+    host "But it wasn't enough this time... so I wanted to talk to you."
+    guest "Why me?"
+    host "You were the only one who was awake at this time."
+    "I can't argue with that..."
+    guest "Alright, makes sense."
+
     guest "{b}<Asks [host] a question about what she's doing right now>{/b}"
-    host "{b}<Talks about something she's doing in order to cope>{/b}"
+    host "{b}<Talks about something she's doing in order to cope - actually probably only talking to [guest]>{/b}"
     "{b}<[guest] reflects on this place>{/b}"
-    "{b}<The oasis is supposed to represent her temporary sense of relief, so there should be a way to show that...>{/b}"
 
     "{b}<A transition from the present to [host]'s past>{/b}"
 
@@ -263,7 +310,13 @@ label act5:
     with Dissolve(.5)
     pause .5
 
-    "{b}<The background is a close-up of [host] and [guest] h*ndholding>{/b}"
-    "{b}<[guest] should say some kind of a closing statement>{/b}"
+    "{b}<The background is a close-up of [host] and [guest] h*ndholding - I mean such a close-up that their hands cover half of the foreground>{/b}"
+    host ""
+    guest "By the way..."
+
+    scene bg black
+    with Dissolve(.5)
+    pause 2
+    guest "Does Meow Meadow have multiplayer support?"
 
     return
