@@ -114,7 +114,7 @@ label start:
     "I wish. Even if she were, she only plays slow-paced games like Meow Meadow. I don't get what she sees in them."
 
     host " > {i}No{/i}"
-    "This isn't like her at all. At least she didn't notice my slip-up about being a delinquent who doesn't study. Or she's just used to it by now..."
+    "This isn't like her at all. At least she didn't notice my slip-up about being a delinquent. Or she's just used to it by now..."
     show guest sitting nervous
     host " > {i}Sorry for distracting you, forget about this.{/i}\n > {i}Goodnight!{/i}"
 
@@ -152,58 +152,100 @@ label act2:
     scene bg entrance
     with Dissolve(.5)
     pause .5
+    "{b}<The background is an oasis - a park, surrounded by a desert>{/b}"
 
     show guest armor at left
-
     show host armor at right
-
-    "{b}<The background is an oasis - a park, surrounded by a desert>{/b}"
     host "...I breathe slowly, and imagine I'm in a nice place with trees. I'd play some ambient sounds too if I could do that quickly enough."
 
-    "{b}<The oasis dissolves, revealing a barren landscape>{/b}"
+    "{b}<The oasis dissolves a little>{/b}"
     host "But it wasn't enough this time... so I wanted to talk to you."
-    guest "Why me?"
+    guest "Why me? Not that I mind."
     host "You were the only one who was awake at this time."
     "I can't argue with that..."
-    guest "Alright, makes sense."
+    guest "Alright, alright. So, what are you up to now? Going to sleep?"
+    host "I started playing to help get my mind off some things."
+    "{b}<There might be a transition into [guest]-o-vision - she's feeling around, sensing only a little part of this oasis>{/b}"
+    "I don't even need to ask what she's playing. I can't relate, but if Meow Meadow is helping her calm down, maybe it's not so pointless after all."
 
-    guest "{b}<Asks [host] a question about what she's doing right now>{/b}"
-    host "{b}<Talks about something she's doing in order to cope - actually probably only talking to [guest]>{/b}"
-    "{b}<[guest] reflects on this place>{/b}"
+    "{b}<The oasis dissolves completely, revealing a barren landscape>{/b}"
+    host "But I shouldn't. I should go back to sleep."
+    guest "Want to share those things you've been trying to stop thinking about first?"
+    "{i}As if.{/i} Considering how little we've talked lately, I might as well be a stranger to her."
+    host "Just some things from my past."
+    guest "Oh, you've never talked to me about any of it before. It's funny how we've known each other for years and I still don't even know where you're from... and neither do you know much about me, actually."
 
-    "{b}<A transition from the present to [host]'s past>{/b}"
-
+    host "Well, my childhood wasn't anything special."
     "{b}<They go to a somewhat lively, but more dusty, town, with all faces being collages of facial parts, like {a=https://static.wikia.nocookie.net/grim-fandango/images/3/36/Land_of_the_Living_exterior.png/revision/latest?cb=20150216003752}here{/a}>{/b}"
-    guest "{b}<Asks [host] a question about something from her past that's related>{/b}"
-    host "{b}<Answers, and they talk back and forth a little, perhaps>{/b}"
-    "{b}<[guest] reflects on this place, too>{/b}"
+    host "I grew up in {image=jumbletext.png}{alt}some village{/alt} until I started going to school and had to move."
+    guest "Huh? I've never heard of {image=jumbletext.png}{alt}that village{/alt}, sorry."
+    host "Yeah, it's just a remote village, sorry for not clarifying."
+    guest "It wasn't anything special?! Maybe I'm just a naïve city kid, but I've love to live in a village."
+    host "I guess so... there weren't many people, but that didn't bother me. The adults terrified me and I was too afraid to even hang out with the ones my age."
+    host "There was one whom I clicked with, but she was from a city and had to go back soon afterwards."
+    guest "Didn't you keep in touch with her?"
 
-    "{b}<A transition from the past to how [host] feels about it>{/b}"
+    host "I really wanted to. I could have written a letter to her..."
+    "{b}<Maybe [host] takes her mask off while saying this>{/b}"
+    host "I was too shy to ask my parents for help with that..."
+    guest "That sucks..."
+    "{b}<More [guest]-o-vision?>{/b}"
+    "I knew she was the shy type, but that's something else... I don't know what to say to comfort her, though."
+
+    host "And I definitely couldn't have asked my older sister."
+    guest "Why not? Wait, you have a sister?! You've never told me about her."
+    host "Sorry if I was secretive about that. I don't want to think about her. I don't trust her, honestly..."
+    "{b}<They climb a spiral staircase, with some stuff in the background that represents her sister>{/b}"
+    guest "What did she do?"
+    "Maybe I'm asking her too much-"
+    host "She never cared about others. Even worse..."
+    host "When I was still a stupid little kid, I invited her to my secret hideout."
+    "I don't like where this is going. Quick, change the topic! Just don't say anything..."
+    guest "Oh, like an abandoned construction site? I loved hanging out at those. Well, maybe there aren't many of those in villages, I guess."
+    "...stupid. Damn it."
+    host "No, it was just a little shack next to a river. There was a cat - Mitzi - that I would play with and bring some food to."
+    guest "Cute!"
+    host "..."
+    host "I was playing with my sister when suddenly, she decided to throw a rock straight at Mitzi while she was sleeping."
+    guest "Oh... Was it an accident?"
+    host "I used to hope for that too. But no, it was on purpose. She survived, but never fully recovered from this."
+    pause 1
+    host "Sorry, I'm talking too much."
+    guest "No, it's fine. I want to know more, actually."
+    "Well, that was selfish."
+    host "There's nothing more to this. Thanks for listening... I think I feel better now."
+    "Maybe my memory just sucks, but this has to be the first time I've heard her say \"thanks\" instead of \"sorry\"."
+    guest "Just for the record - I'm not a licensed professional, you know."
+    host "I've already been to therapy. It helped, and their prescription helped too."
 
     "{b}<They walk along upside-down stairs; The Forger of Smiles corpse is visible behind them>{/b}"
-    host "{b}<Talks about how she has kept a secret about her severe mood swings and her vain attempts to quell them>{/b}"
-    "{b}<[guest] reflects on this place, too>{/b}"
+    host "At least for a while."
+    "I feel a monolithic but dead presence."
+    guest "There are all kinds of therapists. Some are better than others, or so I've heard at least. So, you might want to explore more."
+    host "Maybe. But I thought I would get better over time, not worse."
 
     scene bg black
     with Dissolve(.5)
     pause .5
 
-    "{b}<Image of [guest]'s hand reaching in near-darkness, with only some outlines being visible>{/b}"
-    "{b}<[host] has a sister who was cruel to animals, especially cats, and never got punished for it>{/b}"
-    "{b}<The two discuss how cute cats are and how animals are treated unjustly by people who should know better{/b}"
-    "{b}<While feeling around, [guest] feels a cat, which slowly becomes visible in her view>{/b}"
+    "{b}<More [guest]-o-vision?>{/b}"
+    "{i}You did your best, Forger of Smiles. But your best wasn't enough, was it?{/i}"
+    guest "Have you forgiven your child self? There's nothing you could have done to prevent any of that. If anything, you probably handled everything better than present me would."
 
     jump act3
 
 
 label act3:
+    host "Maybe I've forgiven myself for that. But there's something I haven't said."
+
     scene bg beach
     with Dissolve(.5)
     pause .5
 
-    show guest armor cat at left
-    "{b}<The cat [guest] is holding is more grotesque than what she imaged>{/b}"
+    host "I'm a murderer..."
+    guest "..."
 
+    show guest armor cat at left
     show host armor at right
 
     "{b}<[guest] asks a question that leads her to find out about a great source of [host]'s torment - a shocking event which happened a long time ago>{/b}"
