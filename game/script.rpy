@@ -343,12 +343,19 @@ label act4:
     guest " > {i}youre still up?!{/i}\n > {i}but yes, please, let's talk{/i}"
 
     "{b}<The background is something abstract, maybe a bunch of watery colours, and melting clocks (à la Salvador Dali)>{/b}"
-    "{i}I don't even know how much time we spent talking, but she fell asleep a little after the sun had risen{/i}"
+    "{i}I don't know how much time we spent talking, but she fell asleep a little after the sun had risen{/i}"
 
+    scene bg guestlandscape
+    with Dissolve(.5)
+    pause .5
     "{b}<The background is now them sitting on the rock, which now is surrounded by land (the water level has lowered), and [guest] is being [host]'s lap pillow and petting her hair>{/b}"
-    guest "Sleep well - or at least as well as you possibly can after pulling an all-nighter."
+    guest "Sleep well - or at least as well as you possibly can after pulling an all-nighter like this."
     guest "And, by the way..."
-    guest " > {i}when you wake up - theres something you might be interested in... c;{/i}"
+
+    scene black
+    with Dissolve(.5)
+    pause .5
+    guest " > {i}when you wake up -- theres something you might be interested in{/i}"
 
     jump act5
 
