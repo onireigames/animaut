@@ -111,7 +111,7 @@ label start:
 
     guest " > {i}bored?{/i}"
     show guest sitting
-    "I wish. Even if she were, she only plays slow-paced games like Meow Meadow. I don't get what she sees in them."
+    "I wish. Even if she were, she plays only slow-paced games like Meow Meadow. I don't get what she sees in them."
 
     host " > {i}No{/i}"
     "This isn't like her at all. At least she didn't notice my slip-up about being a delinquent. Or she's just used to it by now..."
@@ -242,37 +242,60 @@ label act3:
     with Dissolve(.5)
     pause .5
 
-    host "I'm a murderer..."
-    guest "..."
-
     show guest armor cat at left
-    show host armor at right
 
-    "{b}<[guest] asks a question that leads her to find out about a great source of [host]'s torment - a shocking event which happened a long time ago>{/b}"
-    "{b}<While digging in a compost pile at the countryside, [host] heard a squeak - there was a litter of mice inside, all of whom except one were eviscerated by her actions>{/b}"
-    "{b}<Nursed the lone survivor, Beep - a blind and tiny mouse pup - back to life: gave it special milk with no lactose, kept it warm throughout the cold winter>{/b}"
-    "{b}<However, one fateful day, the mousey jumped out of its box and [host], worried her cat would get to the mouse before her and eat it, accidentally stepped on the mousey>{/b}"
-    "{b}<The mouse was barely alive, and had to be given a mercy killing>{/b}"
-    "{b}<While [host] is talking about this, her armor falls apart and she melts>{/b}"
+    host "I'm a murderer..."
+    "This has to be a joke."
+    "But unlike me, she doesn't make such badly timed jokes."
+
+    guest "How so? And I hope it's not too late to say this, but our conversation isn't encrypted."
+    "What have I dragged myself into?!"
+    host "It doesn't matter."
+    guest "Look, I don't want you to say anything you'll regret in the morning. Let's just go to sleep."
+    "As if I can sleep after this..."
+    host "It was an accident. I was helping my grandparents out, digging into a compost pile."
+    "Is she even listening? Also, compost pile?!"
+    host "I heard some strange squeaking coming out of it. I didn't know what it was and didn't think too much of it. I was so stupid..."
+
+    "{b}<Dark clouds gather in the background>{/b}"
+    host "I kept digging despite it."
+    "{b}<The clouds cover almost the whole sky>{/b}"
+    host "I didn't know there were mice hidden there."
+    "Mice?! In there?!"
+    "{b}<It starts raining blood>{/b}"
+    host "I still vividly remember how it looked. I don't want to remind myself of that moment, sorry. But, only one of them was left alive..."
+    host "It was a pup that still couldn't even see."
+    "{b}<She smiles a little, her armor is slowly falling apart, and there is a ray of light in the distance, and it isn't raining as much>{/b}"
+    host "I took Beep inside, protected him from my cat, gave him special milk..."
+    host "I even had to make sure he was warm because it was winter. Once, I panicked that he had frozen to death. I was sure he was a goner. He was alright, fortunately."
+    host "After some time, he grew up and could finally see."
+    "{b}<The ray of light starts disappearing and the rain increases in intensity again>{/b}"
+    host "But then, he jumped out of his box and fell onto the floor."
+    host "My first thought was that my cat would get to him, so I stepped back without looking..."
+    "{b}<She melts with her armour gone, and the tide rises to her>{/b}"
+    "I was prepared for the worst, I don't know what to say even about this..."
+    "I feel like I can only stare."
+    "Come on, do something..."
+
+    guest "Well, it was the mice's fault for living in a compost pile of all places!"
+    "That sounded much better in my head."
 
     scene black
     with Pixellate(.5, 5)
     pause .5
-    guest "{b}<Stays quiet, afraid of saying something wrong; she looks away and reflects on what has just happened>{/b}"
-
     host " > {i}Sorry, I didn't want to bother you with this...{/i}\n > {i}It's so late, sorry for keeping you up{/i}"
 
-    "Why is she sorry?! {b}I{/b} should be sorry for being so quiet."
+    "Why is she sorry?! {b}I{/b} should be sorry for failing to comfort her."
 
     "Idiot! You're leaving her hanging like this?!"
 
-    "I just don't know what to say..."
+    "I still don't know what to say..."
 
     pause 1
     guest " > {i}wait{/i}"
 
     pause 3
-    "No reply..."
+    "She's gone, isn't she?"
 
     jump act4
 
