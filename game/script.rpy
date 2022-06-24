@@ -65,7 +65,7 @@ label start:
     "Oh no oh no oh no oh no oh no oh no oh no"
     "Now I remember. It wasn't deja-vu after all. It's probably [friend]. No, it's {b}definitely{/b} [friend]!"
     show guest sitting despairing
-    "That's what you get for not replying to her for at least a few days, especially about an invitation to such wholesome work. Idiot..."
+    "That's what you get for not replying to her for at least a few days, especially about an invitation to such a wholesome place. Idiot..."
 
     hide unknown
     show guest sitting frustrated
@@ -273,7 +273,7 @@ label act3:
     host "But then, he jumped out of his box and fell onto the floor."
     host "My first thought was that my cat would get to him, so I stepped back without looking..."
     "{b}<She melts with her armour gone, and the tide rises to her>{/b}"
-    "I was prepared for the worst, I don't know what to say even about this..."
+    "I was prepared for the worst, but I don't know what to say even about this..."
     "I feel like I can only stare."
     "Come on, do something..."
 
@@ -375,16 +375,16 @@ label act5:
     show host at left
     host "Hi! Nice to meet you!"
 
-    friend "Thanks so much for your donations. I was so excited, I forgot to warn you not to get the wrong idea - you can play with the animals, but you're also here to learn about how to care for them. Sorry about that!"
+    friend "Thanks so much for your donations. I was so excited to invite you that I forgot to clarify something - you can play with the animals and all, but this is also an opportunity for you to learn about how to care for them."
     host "No, it's ok! Actually, can I work here?"
 
-    show guest smug at center
+    show guest smug
     guest "Getting ahead of ourselves here, aren't we? You haven't even started learning about any of this."
 
-    show guest at center
+    show guest
     friend "Come on, don't berate her like that."
 
-    show host proud at center
+    show host proud
     host "That's right. Also, I may already know a thing or two."
 
     scene bg black
