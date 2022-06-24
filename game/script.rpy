@@ -13,7 +13,7 @@ define unknown = Character("<Unknown>", who_color="#E500FF")
 label start:
     "{b}<MUSIC: Vague ambient sounds that give a sense of emptiness>{/b}"
 
-    "{b}<An image of [guest]'s inner landscape - her sitting or lying on a rock in the middle of the ocean, like the rocks around Scarborough shoal>{/b}"
+    scene bg intro
     "How long will I keep failing...?"
     "Why am I even doing this to myself...?"
     "{b}<A close-up image of her>{/b}"
@@ -176,7 +176,7 @@ label act2:
     guest "Oh, you've never talked to me about any of it before. It's funny how we've known each other for years and I still don't even know where you're from... and neither do you know much about me, actually."
 
     host "Well, my childhood wasn't anything special."
-    "{b}<They go to a somewhat lively, but more dusty, town, with all faces being collages of facial parts, like {a=https://static.wikia.nocookie.net/grim-fandango/images/3/36/Land_of_the_Living_exterior.png/revision/latest?cb=20150216003752}here{/a}>{/b}"
+    "{b}<They go to a somewhat, village, with all faces being collages of facial parts, like {a=https://static.wikia.nocookie.net/grim-fandango/images/3/36/Land_of_the_Living_exterior.png/revision/latest?cb=20150216003752}here{/a}>{/b}"
     host "I grew up in {image=jumbletext.png}{alt}some village{/alt} until I started going to school and had to move."
     guest "Huh? I've never heard of {image=jumbletext.png}{alt}that village{/alt}, sorry."
     host "Yeah, it's just a remote village, sorry for not clarifying."
