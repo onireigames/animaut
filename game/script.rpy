@@ -355,7 +355,7 @@ label act4:
     scene black
     with Dissolve(.5)
     pause .5
-    guest " > {i}when you wake up -- theres something you might be interested in{/i}"
+    guest " > {i}when you wake up -- theres something you might be interested in if youre free in a few days{/i}"
 
     jump act5
 
@@ -367,23 +367,40 @@ label act5:
 
     "{b}<The background is Fox Peak Sanctuary - a nonprofit which rescues foxes>{/b}"
     show friend at right
-    friend "Oh, you both made it! Welcome to Fox Peak Sanctuary!"
+    friend "Oh, you both made it! Welcome to Fox Peak Sanctuary."
 
     show guest at center
     guest "Hello."
 
     show host at left
-    host "Hi!"
+    host "Hi! Nice to meet you!"
 
-    "{b}<They discuss some stuff about what they're supposed to do there for the animals>{/b}"
-    "{b}<Or perhaps they brought some money and got to see first-hand how professionals do their work and maybe were taught a few things about caring for animals there>{/b}"
+    friend "Thanks so much for your donations. I was so excited, I forgot to warn you not to get the wrong idea - you can play with the animals, but you're also here to learn about how to care for them. Sorry about that!"
+    host "No, it's ok! Actually, can I work here?"
+
+    show guest smug at center
+    guest "Getting ahead of ourselves here, aren't we? You haven't even started learning about any of this."
+
+    show guest at center
+    friend "Come on, don't berate her like that."
+
+    show host proud at center
+    host "That's right. Also, I may already know a thing or two."
+
+    scene bg black
+    with Dissolve(.5)
+    pause 1
+
+    "{b}<The background is something abstract or just black>{/b}"
+    "...She did know a thing or two. Actually, probably three or four."
 
     scene bg guestlandscape
     with Dissolve(.5)
     pause .5
 
     "{b}<The background is a close-up of [host] and [guest] h*ndholding - I mean such a close-up that their hands cover half of the foreground>{/b}"
-    host ""
+    host "Thanks so much for inviting me here! I hope we can come back sometime."
+    guest "Glad to help! I had fun too, actually."
     guest "By the way..."
 
     scene bg black
