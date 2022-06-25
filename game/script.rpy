@@ -149,10 +149,9 @@ label start:
 label act2:
     host "Everything else - I close my eyes..."
 
-    scene bg entrance
+    scene bg host oasis
     with Dissolve(.5)
     pause .5
-    "{b}<The background is an oasis - a park, surrounded by a desert>{/b}"
 
     show guest armor at left
     show host armor at right
@@ -168,7 +167,9 @@ label act2:
     "{b}<There might be a transition into [guest]-o-vision - she's feeling around, sensing only a little part of this oasis>{/b}"
     "I don't even need to ask what she's playing. I can't relate, but if Meow Meadow is helping her calm down, maybe it's not so pointless after all."
 
-    "{b}<The oasis dissolves completely, revealing a barren landscape>{/b}"
+    scene bg host desert
+    with Dissolve(.5)
+    pause .5
     host "But I shouldn't. I should go back to sleep."
     guest "Want to share those things you've been trying to stop thinking about first?"
     "{i}As if.{/i} Considering how little we've talked lately, I might as well be a stranger to her."
