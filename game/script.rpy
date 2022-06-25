@@ -195,10 +195,13 @@ label act2:
     host "And I definitely couldn't have asked my older sister."
     guest "Why not? Wait, you have a sister?! You've never told me about her."
     host "Sorry if I was secretive about that. I don't want to think about her. I don't trust her, honestly..."
-    "{b}<They climb a spiral staircase, with some stuff in the background that represents her sister>{/b}"
     guest "What did she do?"
     "Maybe I'm asking her too much-"
     host "She never cared about others. Even worse..."
+    scene bg host staircase with PushMove(1, mode="pushdown")
+    pause 1
+    show guest armor at left
+    show host armor at right
     host "When I was still a stupid little kid, I invited her to my secret hideout."
     "I don't like where this is going. Quick, change the topic! Just don't say anything..."
     guest "Oh, like an abandoned construction site? I loved hanging out at those. Well, maybe there aren't many of those in villages, I guess."
