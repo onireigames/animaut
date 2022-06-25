@@ -19,8 +19,7 @@ label start:
     "{b}<A close-up image of her>{/b}"
     "I just need some time to reflect..."
 
-    scene bg guestroom
-    with Dissolve(1)
+    scene bg guestroom with Dissolve(1)
 
     "{b}<MUSIC: Chill, either with a fast and light bass melody or something that emulates the same feel, think {a=https://youtu.be/ZZ-mtVyjBqI}this{/a} or perhaps the chill tracks from {a=https://youtu.be/5-K8R1hDG9E}here{/a}>{/b}"
     "Maybe I am a masochist after all."
@@ -139,8 +138,7 @@ label start:
     show guest sitting
     host " > {i}Sorry if it's like I was using you or something{/i}\n > {i}I tried everything else before that{/i}"
 
-    scene bg black
-    with Dissolve(.5)
+    scene bg black with Dissolve(.5)
     pause 1
     guest " > {i}everything else?{/i}"
 
@@ -149,8 +147,7 @@ label start:
 label act2:
     host "Everything else - I close my eyes..."
 
-    scene bg host oasis
-    with Dissolve(.5)
+    scene bg host oasis with Dissolve(.5)
     pause .5
 
     show guest armor at left
@@ -167,8 +164,7 @@ label act2:
     "{b}<There might be a transition into [guest]-o-vision - she's feeling around, sensing only a little part of this oasis>{/b}"
     "I don't even need to ask what she's playing. I can't relate, but if Meow Meadow is helping her calm down, maybe it's not so pointless after all."
 
-    scene bg host desert
-    with Dissolve(.5)
+    show bg host desert with Dissolve(.5)
     pause .5
     host "But I shouldn't. I should go back to sleep."
     guest "Want to share those things you've been trying to stop thinking about first?"
@@ -177,7 +173,10 @@ label act2:
     guest "Oh, you've never talked to me about any of it before. It's funny how we've known each other for years and I still don't even know where you're from... and neither do you know much about me, actually."
 
     host "Well, my childhood wasn't anything special."
-    "{b}<They go to a somewhat, village, with all faces being collages of facial parts, like {a=https://static.wikia.nocookie.net/grim-fandango/images/3/36/Land_of_the_Living_exterior.png/revision/latest?cb=20150216003752}here{/a}>{/b}"
+    scene bg host village with Dissolve(.5)
+    pause 2
+    show guest armor at left
+    show host armor at right
     host "I grew up in {image=jumbletext.png}{alt}some village{/alt} until I started going to school and had to move."
     guest "Huh? I've never heard of {image=jumbletext.png}{alt}that village{/alt}, sorry."
     host "Yeah, it's just a remote village, sorry for not clarifying."
@@ -281,8 +280,7 @@ label act3:
     guest "Well, it was the mice's fault for living in a compost pile of all places!"
     "That sounded much better in my head."
 
-    scene black
-    with Pixellate(.5, 5)
+    scene black with Pixellate(.5, 5)
     pause .5
     host " > {i}Sorry, I didn't want to bother you with this...{/i}\n > {i}It's so late, sorry for keeping you up{/i}"
 
@@ -302,24 +300,21 @@ label act3:
 
 
 label act4:
-    scene bg guestbed
-    with Pixellate(.5, 5)
+    scene bg guestbed with Pixellate(.5, 5)
     pause .5
 
     "{b}<[guest] is in her bed, her face too dark to see, and a digital clock showing that it's now 5am, and a lit phone beside her>{/b}"
     "No matter how many times I check, it won't make her reappear."
     "Any rational person would just go to sleep, not spend 2 hours waiting for nothing like an idiot."
 
-    scene bg guestlandscape
-    with Dissolve(.5)
+    scene bg guestlandscape with Dissolve(.5)
     pause .5
 
     "{b}<[guest] is seen lying on her rock with her blindfold in her hand, crying with her eyes open and a blank stare>{/b}"
     "{b}<[guest]'s pose matches the previous background perfectly>{/b}"
     "I can't sleep like this."
 
-    scene bg guestlandscapereach
-    with Dissolve(.5)
+    scene bg guestlandscapereach with Dissolve(.5)
     pause .5
     "{b}<A close view of [guest]'s arm reaching into the murky water>{/b}"
     guest " > {i}are you still there?{/i}"
@@ -337,8 +332,7 @@ label act4:
     "{b}<The background changes yet again, to [host]'s other arm doing the same>{/b}"
     host " > {i}Can we talk?{/i}" with vpunch
 
-    scene black
-    with Dissolve(.5)
+    scene black with Dissolve(.5)
     pause .5
 
     guest " > {i}youre still up?!{/i}\n > {i}but yes, please, let's talk{/i}"
@@ -346,15 +340,13 @@ label act4:
     "{b}<The background is something abstract, maybe a bunch of watery colours, and melting clocks (à la Salvador Dali)>{/b}"
     "{i}I don't know how much time we spent talking, but she fell asleep a little after the sun had risen{/i}"
 
-    scene bg guestlandscape
-    with Dissolve(.5)
+    scene bg guestlandscape with Dissolve(.5)
     pause .5
     "{b}<The background is now them sitting on the rock, which now is surrounded by land (the water level has lowered), and [guest] is being [host]'s lap pillow and petting her hair>{/b}"
     guest "Sleep well - or at least as well as you possibly can after pulling an all-nighter like this."
     guest "And, by the way..."
 
-    scene black
-    with Dissolve(.5)
+    scene black with Dissolve(.5)
     pause .5
     guest " > {i}when you wake up -- theres something you might be interested in if youre free in a few days{/i}"
 
@@ -388,15 +380,13 @@ label act5:
     show host proud
     host "That's right. Also, I may already know a thing or two."
 
-    scene bg black
-    with Dissolve(.5)
+    scene bg black with Dissolve(.5)
     pause 1
 
     "{b}<The background is something abstract or just black>{/b}"
     "...She did know a thing or two. Actually, probably three or four."
 
-    scene bg guestlandscape
-    with Dissolve(.5)
+    scene bg guestlandscape with Dissolve(.5)
     pause .5
 
     "{b}<The background is a close-up of [host] and [guest] h*ndholding - I mean such a close-up that their hands cover half of the foreground>{/b}"
@@ -404,8 +394,7 @@ label act5:
     guest "Glad to help! I had fun too, actually."
     guest "By the way..."
 
-    scene bg black
-    with Dissolve(.5)
+    scene bg black with Dissolve(.5)
     pause 2
     guest "Does Meow Meadow have multiplayer support?"
 
