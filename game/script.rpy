@@ -198,11 +198,11 @@ label act2:
     guest "What did she do?"
     "Maybe I'm asking her too much-"
     host "She never cared about others. Even worse..."
-    scene bg host staircase with PushMove(1, mode="pushdown")
+    scene bg host staircase with Dissolve(1)
     pause 1
     show guest armor at left
     show host armor at right
-    host "When I was still a stupid little kid, I invited her to my secret hideout."
+    host "When I was still a little kid, I invited her to my secret hideout. I wish I hadn't..."
     "I don't like where this is going. Quick, change the topic! Just don't say anything..."
     guest "Oh, like an abandoned construction site? I loved hanging out at those. Well, maybe there aren't many of those in villages, I guess."
     "...stupid. Damn it."
@@ -215,15 +215,19 @@ label act2:
     pause 1
     host "Sorry, I'm talking too much."
     guest "No, it's fine. I want to know more, actually."
-    "Well, that was selfish."
+    "Well, that sounded selfish."
     host "There's nothing more to this. Thanks for listening... I think I feel better now."
     "Maybe my memory just sucks, but this has to be the first time I've heard her say \"thanks\" instead of \"sorry\"."
     guest "Just for the record - I'm not a licensed professional, you know."
     host "I've already been to therapy. It helped, and their prescription helped too."
 
-    "{b}<They walk along upside-down stairs; The Forger of Smiles corpse is visible behind them>{/b}"
+    scene bg host forger with Dissolve(1)
+    pause 1
+    show guest armor at left:
+        yzoom -1.0
+    show host armor at right:
+        yzoom -1.0
     host "At least for a while."
-    "I feel a monolithic but dead presence."
     guest "There are all kinds of therapists. Some are better than others, or so I've heard at least. So, you might want to explore more."
     host "Maybe. But I thought I would get better over time, not worse."
 
@@ -245,7 +249,7 @@ label act3:
     with Dissolve(.5)
     pause .5
 
-    show guest armor cat at left
+    show guest armor at left
 
     host "I'm a murderer..."
     "This has to be a joke."
