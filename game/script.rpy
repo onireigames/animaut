@@ -280,18 +280,15 @@ label act3:
     host "But then, he jumped out of his box and fell onto the floor."
     host "My first thought was that my cat would get to him, so I stepped back without looking..."
     "{b}<She melts with her armour gone, and the tide rises to her>{/b}"
-    "I was prepared for the worst, but I don't know what to say even about this..."
+    "I thought I was prepared for the worst, but I don't know what to say even about this..."
     "I feel like I can only stare."
     "Come on, do something..."
-
-    guest "Well, it was the mice's fault for living in a compost pile of all places!"
-    "That sounded much better in my head."
 
     scene black with Pixellate(.5, 5)
     pause .5
     host " > {i}Sorry, I didn't want to bother you with this...{/i}\n > {i}It's so late, sorry for keeping you up{/i}"
 
-    "Why is she sorry?! {b}I{/b} should be sorry for failing to comfort her."
+    "Why is she sorry?! It was me who didn't do anything about this."
 
     "Idiot! You're leaving her hanging like this?!"
 
@@ -307,10 +304,9 @@ label act3:
 
 
 label act4:
-    scene bg guestbed with Pixellate(.5, 5)
+    scene bg guest bed with Pixellate(.5, 5)
     pause .5
 
-    "{b}<[guest] is in her bed, her face too dark to see, and a digital clock showing that it's now 5am, and a lit phone beside her>{/b}"
     "No matter how many times I check, it won't make her reappear."
     "Any rational person would just go to sleep, not spend 2 hours waiting for nothing like an idiot."
 
