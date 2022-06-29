@@ -33,7 +33,7 @@ label start:
     "This stupid ledge again! I swear, they should screen level designers for sadistic tendencies. Or maybe they do, and that's exactly how they hire them."
 
     show guest sitting smirk
-    "Or maybe you just got too full of yourself, dumbass."
+    "{i}Or maybe you just got too full of yourself, dumbass.{/i}"
 
     show guest sitting
     "Anyway, I'm so done with this. I think I'll just go to sleep."
@@ -64,7 +64,7 @@ label start:
     "Oh no oh no oh no oh no oh no oh no oh no"
     "Now I remember. It wasn't deja-vu after all. It's probably [friend]. No, it's {b}definitely{/b} [friend]!"
     show guest sitting despairing
-    "That's what you get for not replying to her for at least a few days, especially about an invitation to such a wholesome place. Idiot..."
+    "{i}That's what you get for not replying to her for at least a few days, especially about an invitation to such a wholesome place. Idiot...{/i}"
 
     hide unknown
     show guest sitting frustrated
@@ -290,7 +290,7 @@ label act3:
 
     "Why is she sorry?! It was me who didn't do anything about this."
 
-    "Idiot! You're leaving her hanging like this?!"
+    "{i}Idiot! You're leaving her hanging like this?!{/i}"
 
     "I still don't know what to say..."
 
@@ -308,23 +308,32 @@ label act4:
     pause .5
 
     "No matter how many times I check, it won't make her reappear."
-    "Any rational person would just go to sleep, not spend 2 hours waiting for nothing like an idiot."
+    "{i}Any rational person would just go to sleep, not spend 2 hours waiting for nothing like you.{/i}"
+    "But this is also one of those moments where no matter how heavy my eyelids feel, I can't fall asleep anyway. If there's anything irrational here, it's the human body."
 
     scene bg guest lying with Dissolve(3)
     pause 1
 
-    "I can't sleep like this."
+    "{i}You shouldn't have asked her so much and you shouldn't have ignored her. She'll never forgive you for being so nosy and indifferent.{/i}"
+    "Too nosy and too indifferent - what an oxymoron. It's true, though. How do I even manage to act like this?!"
+    "And let me guess - if I told [friend] about this, she'd tell me I'm being too hard on myself. \"Treat yourself like you'd treat your best friend\" or something - {i}yeah, right{/i}."
+    "{i}Maybe her little advice, would actually make sense if you didn't treat your friends even worse than yourself.{/i}"
 
-    scene bg guestlandscapereach with Dissolve(.5)
+    scene bg black
+    pause 2
+    "..."
+    "Well, then..."
+    "What would I like to see myself do if I were [host], anyway?"
+
+    scene bg guest reach with Dissolve(1)
     pause .5
-    "{b}<A close view of [guest]'s arm reaching into the murky water>{/b}"
     guest " > {i}are you still there?{/i}"
     guest " > {i}well, obviously not{/i}\n > {i}but i dont know what else to do{/i}"
-    "I don't even know what I'm doing."
+    "(Nevermind, I don't even know what I'm doing...)"
     guest " > {i}sorry im such an idiot{/i}"
 
     pause 1
-    "Well, okay, I do know what I'm doing - one of those things you tend to regret in the morning when you can think clearly."
+    "Actually, I do know what I'm doing - one of those things you tend to regret in the morning, when you can finally think clearly."
 
     pause 3
     "{b}<The background changes to [host]'s arm reaching out from under the water and grabbing [guest]'s forearm firmly>{/b}"
