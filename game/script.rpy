@@ -228,7 +228,7 @@ label act2:
     show host armor at right:
         yzoom -1.0
     host "At least for a while."
-    guest "There are all kinds of therapists. Some are better than others, or so I've heard at least. So, you might want to explore more."
+    guest "There are all kinds of therapists. Some are better than others, or so I've heard at least. You might want to explore more."
     host "Maybe. But I thought I would get better over time, not worse."
 
     scene bg black
@@ -236,15 +236,15 @@ label act2:
     pause .5
 
     "{b}<More [guest]-o-vision?>{/b}"
-    "{i}You did your best, Forger of Smiles. But your best wasn't enough, was it?{/i}"
+    # TODO: Fix this disaster of a dialogue
+    guest "Maybe, maybe."
     guest "Have you forgiven your child self? There's nothing you could have done to prevent any of that. If anything, you probably handled everything better than present me would."
+    host "Maybe I've forgiven myself for that. But there's something I haven't said."
 
     jump act3
 
 
 label act3:
-    host "Maybe I've forgiven myself for that. But there's something I haven't said."
-
     scene bg beach
     with Dissolve(.5)
     pause .5
@@ -310,11 +310,9 @@ label act4:
     "No matter how many times I check, it won't make her reappear."
     "Any rational person would just go to sleep, not spend 2 hours waiting for nothing like an idiot."
 
-    scene bg guestlandscape with Dissolve(.5)
-    pause .5
+    scene bg guest lying with Dissolve(3)
+    pause 1
 
-    "{b}<[guest] is seen lying on her rock with her blindfold in her hand, crying with her eyes open and a blank stare>{/b}"
-    "{b}<[guest]'s pose matches the previous background perfectly>{/b}"
     "I can't sleep like this."
 
     scene bg guestlandscapereach with Dissolve(.5)
