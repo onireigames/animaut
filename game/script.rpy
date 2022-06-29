@@ -347,7 +347,8 @@ label act4:
 
     guest " > {i}youre still up?!{/i}\n > {i}but yes, please, let's talk{/i}"
 
-    "{b}<The background is something abstract, maybe a bunch of watery colours, and melting clocks (à la Salvador Dali)>{/b}"
+    scene bg clocks with Dissolve(3)
+    pause .5
     "{i}I don't know how much time we spent talking, but she fell asleep a little after the sun had risen{/i}"
 
     scene bg guestlandscape with Dissolve(.5)
