@@ -279,7 +279,7 @@ label act3:
     "{b}<The ray of light starts disappearing and the rain increases in intensity again>{/b}"
     host "But then, he jumped out of his box and fell onto the floor."
     host "My first thought was that my cat would get to him, so I stepped back without looking..."
-    "{b}<She melts with her armour gone, and the tide rises to her>{/b}"
+    "{b}<She melts with her armour gone, and the tide rises up to her>{/b}"
     "I thought I was prepared for the worst, but I don't know what to say even about this..."
     "I feel like I can only stare."
     "Come on, do something..."
@@ -351,9 +351,8 @@ label act4:
     pause .5
     "{i}I don't know how much time we spent talking, but she fell asleep a little after the sun had risen{/i}"
 
-    scene bg guestlandscape with Dissolve(.5)
+    scene bg lappillow with Dissolve(2)
     pause .5
-    "{b}<The background is now them sitting on the rock, which now is surrounded by land (the water level has lowered), and [guest] is being [host]'s lap pillow and petting her hair>{/b}"
     guest "Sleep well - or at least as well as you possibly can after pulling an all-nighter like this."
     guest "And, by the way..."
 
