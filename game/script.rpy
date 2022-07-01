@@ -364,7 +364,7 @@ label act4:
 
 
 label act5:
-    scene bg guestlandscape
+    scene bg fps
     with Dissolve(.5)
     pause .5
 
