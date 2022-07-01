@@ -368,7 +368,6 @@ label act5:
     with Dissolve(.5)
     pause .5
 
-    "{b}<The background is Fox Peak Sanctuary - a nonprofit which rescues foxes>{/b}"
     show friend at right
     friend "Oh, you both made it! Welcome to Fox Peak Sanctuary."
 
@@ -396,10 +395,9 @@ label act5:
     "{b}<The background is something abstract or just black>{/b}"
     "...She did know a thing or two. Actually, probably three or four."
 
-    scene bg guestlandscape with Dissolve(.5)
+    scene bg handholding with Dissolve(.5)
     pause .5
 
-    "{b}<The background is a close-up of [host] and [guest] h*ndholding - I mean such a close-up that their hands cover half of the foreground>{/b}"
     host "Thanks so much for inviting me here! I hope we can come back sometime."
     guest "Glad to help! I had fun too, actually."
     guest "By the way..."
