@@ -185,50 +185,71 @@ label act2:
     host "There was one whom I clicked with, but she was from a city and had to go back soon afterwards."
     guest "Didn't you keep in touch with her?"
 
+    show host armor takingmaskoff
     host "I really wanted to. I could have written a letter to her..."
-    "{b}<Maybe [host] takes her mask off while saying this>{/b}"
+    show host armor talking sad
     host "I was too shy to ask my parents for help with that..."
+    show host armor sad
     guest "That sucks..."
     "{b}<More [guest]-o-vision?>{/b}"
-    "I knew she was the shy type, but that's something else... I don't know what to say to comfort her, though."
+    "I knew she was the shy type, but that's shyness on another level... I don't know what to say to comfort her, though."
 
+    show host armor talking lookside
     host "And I definitely couldn't have asked my older sister."
+    show host armor sad
     guest "Why not? Wait, you have a sister?! You've never told me about her."
+    show host armor talking sad
     host "Sorry if I was secretive about that. I don't want to think about her. I don't trust her, honestly..."
+    show host armor neutral
     guest "What did she do?"
     "Maybe I'm asking her too much-"
+    show host armor talking sad
     host "She never cared about others. Even worse..."
     scene bg host staircase with Dissolve(1)
     pause 1
     show guest armor at left
-    show host armor at right
+    show host armor talking sad at right
     host "When I was still a little kid, I invited her to my secret hideout. I wish I hadn't..."
+    show host armor neutral
     "I don't like where this is going. Quick, change the topic! Just don't say anything..."
-    guest "Oh, like an abandoned construction site? I loved hanging out at those. Well, maybe there aren't many of those in villages, I guess."
-    "...stupid. Damn it."
+    guest "Oh, like an abandoned construction site? I loved hanging out at those."
+    "...stupid. Damn it! There aren't many construction sites in villages, obviously."
+    show host armor talking gloomy
     host "No, it was just a little shack next to a river. There was a cat - Mitzi - that I would play with and bring some food to."
+    show host armor gloomy
     guest "Cute!"
     host "..."
+    show host armor talking lookside
     host "I was playing with my sister when suddenly, she decided to throw a rock straight at Mitzi while she was sleeping."
+    show host armor gloomy
     guest "Oh... Was it an accident?"
+    show host armor talking sad
     host "I used to hope for that too. But no, it was on purpose. She survived, but never fully recovered from this."
+    show host armor gloomy
     pause 1
+    show host armor talking lookside
     host "Sorry, I'm talking too much."
+    show host armor gloomy
     guest "No, it's fine. I want to know more, actually."
     "Well, that sounded selfish."
+    show host armor talking lookside
     host "There's nothing more to this. Thanks for listening... I think I feel better now."
-    "Maybe my memory just sucks, but this has to be the first time I've heard her say \"thanks\" instead of \"sorry\"."
-    guest "Just for the record - I'm not a licensed professional, you know."
+    show host armor lookside
+    "Maybe my memory just sucks, but this has to be the first time I've heard her say \"thanks\" instead of \"sorry\". Did she even mean it?"
+    guest "I'm glad to help, if I really did... But just for the record - I'm not a licensed professional, you know!"
+    show host armor talking
     host "I've already been to therapy. It helped, and their prescription helped too."
 
     scene bg host forger with Dissolve(1)
     pause 1
     show guest armor at left:
         yzoom -1.0
-    show host armor at right:
+    show host armor talking sad at right:
         yzoom -1.0
     host "At least for a while."
+    show host armor lookside
     guest "There are all kinds of therapists. Some are better than others, or so I've heard at least. You might want to explore more."
+    show host armor talking sad
     host "Maybe. But I thought I would get better over time, not worse."
 
     scene bg black
@@ -236,10 +257,14 @@ label act2:
     pause .5
 
     "{b}<More [guest]-o-vision?>{/b}"
-    # TODO: Fix this disaster of a dialogue
-    guest "Maybe, maybe."
-    guest "Have you forgiven your child self? There's nothing you could have done to prevent any of that. If anything, you probably handled everything better than present me would."
-    host "Maybe I've forgiven myself for that. But there's something I haven't said."
+    guest "Well, why didn't you go back when you started feeling worse again? Or did you keep going?"
+    host "I stopped going and I didn't want to go again."
+    host "Before you say anything - I know, it was stupid."
+    guest "If you know it was a mistake, why are you talking to me instead of to someone who knows what they're doing?"
+    host "It's not so simple! No matter how much I wanted it to work, I couldn't be honest with them."
+    guest "Really? What you said wasn't so bad. You've probably heard this before, but there's nothing you could have done to prevent any of that."
+    guest "If anything, you probably handled everything better than present me would."
+    host "Yeah, I've heard this before, and I think I've already forgiven myself for that. Maybe I'd be okay with myself..."
 
     jump act3
 
@@ -251,15 +276,14 @@ label act3:
 
     show guest armor at left
 
-    host "I'm a murderer..."
-    "This has to be a joke."
+    host "...if I weren't a murderer - just as bad as my sister."
+    "...This has to be a joke."
     "But unlike me, she doesn't make such badly timed jokes."
 
-    guest "How so? And I hope it's not too late to say this, but our conversation isn't encrypted."
+    guest "What?! And I hope it's not too late to say this, but our conversation isn't encrypted."
     "What have I dragged myself into?!"
     host "It doesn't matter."
     guest "Look, I don't want you to say anything you'll regret in the morning. Let's just go to sleep."
-    "As if I can sleep after this..."
     host "It was an accident. I was helping my grandparents out, digging into a compost pile."
     "Is she even listening? Also, compost pile?!"
     host "I heard some strange squeaking coming out of it. I didn't know what it was and didn't think too much of it. I was so stupid..."
