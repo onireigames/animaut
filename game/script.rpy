@@ -424,9 +424,10 @@ label act5:
     with Dissolve(.5)
     pause .5
 
-    show friend at right
+    show friend standing talking at right
     friend "Oh, you both made it! Welcome to Fox Peak Sanctuary."
 
+    show friend standing
     show guest standing talking at center
     guest "Hello."
 
@@ -435,7 +436,9 @@ label act5:
     host "Hi! Nice to meet you!"
 
     show host standing smiling
+    show friend standing talking
     friend "Thanks so much for your donations. I was so excited to invite you that I forgot to clarify something - you can play with the animals and all, but this is also an opportunity for you to learn about how to care for them."
+    show friend standing
     show host standing talking smiling
     host "No, it's ok! Actually, can I work here?"
 
