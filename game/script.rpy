@@ -156,10 +156,16 @@ label act2:
 
     "{b}<The oasis dissolves a little>{/b}"
     host "But it wasn't enough this time... so I wanted to talk to you."
-    guest "Why me? Not that I mind."
+    show guest armor talking
+    guest "Why me?"
+    show guest armor talking smile
+    guest "Not that I mind."
+    show guest armor
     host "You were the only one who was awake at this time."
     "I can't argue with that..."
+    show guest armor talking
     guest "Alright, alright. So, what are you up to now? Going to sleep?"
+    show guest armor
     host "I started playing to help get my mind off some things."
     "{b}<There might be a transition into [guest]-o-vision - she's feeling around, sensing only a little part of this oasis>{/b}"
     "I don't even need to ask what she's playing. I can't relate, but if Meow Meadow is helping her calm down, maybe it's not so pointless after all."
@@ -167,41 +173,57 @@ label act2:
     show bg host desert with Dissolve(.5)
     pause .5
     host "But I shouldn't. I should go back to sleep."
+    show guest armor talking
     guest "Want to share those things you've been trying to stop thinking about first?"
+    show guest armor
     "{i}As if.{/i} Considering how little we've talked lately, I might as well be a stranger to her."
     host "Just some things from my past."
+    show guest armor talking
     guest "Oh, you've never talked to me about any of it before. It's funny how we've known each other for years and I still don't even know where you're from... and neither do you know much about me, actually."
 
+    show guest armor
     host "Well, my childhood wasn't anything special."
     scene bg host village with Dissolve(.5)
     pause 2
     show guest armor at left
     show host armor at right
     host "I grew up in {image=jumbletext.png}{alt}some village{/alt} until I started going to school and had to move."
+    show guest armor talking
     guest "Huh? I've never heard of {image=jumbletext.png}{alt}that village{/alt}, sorry."
+    show guest armor
     host "Yeah, it's just a remote village, sorry for not clarifying."
+    show guest armor talking smile
     guest "It wasn't anything special?! Maybe I'm just a naïve city kid, but I've love to live in a village."
+    show guest armor
     host "I guess so... there weren't many people, but that didn't bother me. The adults terrified me and I was too afraid to even hang out with the ones my age."
     host "There was one whom I clicked with, but she was from a city and had to go back soon afterwards."
+    show guest armor talking
     guest "Didn't you keep in touch with her?"
 
+    show guest armor
     show host armor takingmaskoff
     host "I really wanted to. I could have written a letter to her..."
     show host armor talking sad
     host "I was too shy to ask my parents for help with that..."
     show host armor sad
+    show guest armor talking
     guest "That sucks..."
+    show guest armor
     "{b}<More [guest]-o-vision?>{/b}"
     "I knew she was the shy type, but that's shyness on another level... I don't know what to say to comfort her, though."
 
     show host armor talking lookside
     host "And I definitely couldn't have asked my older sister."
     show host armor sad
+    show guest armor talking
     guest "Why not? Wait, you have a sister?! You've never told me about her."
+    show guest armor
     show host armor talking sad
     host "Sorry if I was secretive about that. I don't want to think about her. I don't trust her, honestly..."
     show host armor neutral
+    show guest armor talking
     guest "What did she do?"
+    show guest armor
     "Maybe I'm asking her too much-"
     show host armor talking sad
     host "She never cared about others. Even worse..."
@@ -212,17 +234,23 @@ label act2:
     host "When I was still a little kid, I invited her to my secret hideout. I wish I hadn't..."
     show host armor neutral
     "I don't like where this is going. Quick, change the topic! Just don't say anything..."
+    show guest armor talking smile
     guest "Oh, like an abandoned construction site? I loved hanging out at those."
+    show guest armor
     "...stupid. Damn it! There aren't many construction sites in villages, obviously."
     show host armor talking gloomy
     host "No, it was just a little shack next to a river. There was a cat - Mitzi - that I would play with and bring some food to."
     show host armor gloomy
+    show guest armor talking smile
     guest "Cute!"
+    show guest armor
     host "..."
     show host armor talking lookside
     host "I was playing with my sister when suddenly, she decided to throw a rock straight at Mitzi while she was sleeping."
     show host armor gloomy
+    show guest armor talking
     guest "Oh... Was it an accident?"
+    show guest armor
     show host armor talking sad
     host "I used to hope for that too. But no, it was on purpose. She survived, but never fully recovered from this."
     show host armor gloomy
@@ -230,13 +258,17 @@ label act2:
     show host armor talking lookside
     host "Sorry, I'm talking too much."
     show host armor gloomy
+    show guest armor talking smile
     guest "No, it's fine. I want to know more, actually."
+    show guest armor
     "Well, that sounded selfish."
     show host armor talking lookside
     host "There's nothing more to this. Thanks for listening... I think I feel better now."
     show host armor lookside
-    "Maybe my memory just sucks, but this has to be the first time I've heard her say \"thanks\" instead of \"sorry\". Did she even mean it?"
+    "Maybe my memory just sucks, but this has to be the first time I've heard her say \"thanks\" instead of \"sorry\". Did she even mean it, though?"
+    show guest armor talking
     guest "I'm glad to help, if I really did... But just for the record - I'm not a licensed professional, you know!"
+    show guest armor
     show host armor talking
     host "I've already been to therapy. It helped, and their prescription helped too."
 
@@ -248,7 +280,9 @@ label act2:
         yzoom -1.0
     host "At least for a while."
     show host armor lookside
+    show guest armor talking
     guest "There are all kinds of therapists. Some are better than others, or so I've heard at least. You might want to explore more."
+    show guest armor
     show host armor talking sad
     host "Maybe. But I thought I would get better over time, not worse."
 
@@ -273,8 +307,6 @@ label act3:
     scene bg beach
     with Dissolve(.5)
     pause .5
-
-    show guest armor at left
 
     host "...if I weren't a murderer - just as bad as my sister."
     "...This has to be a joke."
