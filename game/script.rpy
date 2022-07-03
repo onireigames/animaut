@@ -59,11 +59,23 @@ label start:
     unknown "{b}<PING>{/b}"
 
     show guest sitting
+    show unknown sitting:
+        yzoom 1.25
+        xzoom 1.25
     "Oh no..."
     show guest sitting nervous
+    show unknown sitting:
+        yzoom 1.5
+        xzoom 1.5
     "Oh no oh no oh no oh no oh no oh no oh no"
+    show unknown sitting:
+        yzoom 1.75
+        xzoom 1.75
     "Now I remember. It wasn't deja-vu after all. It's probably [friend]. No, it's {b}definitely{/b} [friend]!"
     show guest sitting despairing
+    show unknown sitting:
+        yzoom 2
+        xzoom 2
     "{i}That's what you get for not replying to her for at least a few days, especially about an invitation to such a wholesome place. Idiot...{/i}"
 
     hide unknown
@@ -81,7 +93,7 @@ label start:
     "Not again! Okay, this time I was just distracted. I think I deserve one more try."
 
     show guest sitting nervous
-    show unknown menacing with vpunch
+    show unknown menacing behind guest with vpunch
     unknown "{b}<PING>{/b}"
 
     show guest sitting despairing
