@@ -431,21 +431,25 @@ label act5:
     guest "Hello."
 
     show guest standing
-    show host at left
+    show host standing talking smiling at left
     host "Hi! Nice to meet you!"
 
+    show host standing smiling
     friend "Thanks so much for your donations. I was so excited to invite you that I forgot to clarify something - you can play with the animals and all, but this is also an opportunity for you to learn about how to care for them."
+    show host standing talking smiling
     host "No, it's ok! Actually, can I work here?"
 
+    show host standing
     show guest standing talking smug:
         xzoom -1
     guest "Getting ahead of ourselves here, aren't we? You haven't even started learning about any of this."
 
+    show host standing smiling
     show guest standing:
         xzoom 1
     friend "Come on, don't berate her like that."
 
-    show host proud
+    show host standing talking smiling eyesclosed
     host "Yeah. Also, I may already know a thing or two."
 
     scene bg black with Dissolve(.5)
