@@ -427,23 +427,26 @@ label act5:
     show friend at right
     friend "Oh, you both made it! Welcome to Fox Peak Sanctuary."
 
-    show guest at center
+    show guest standing talking at center
     guest "Hello."
 
+    show guest standing
     show host at left
     host "Hi! Nice to meet you!"
 
     friend "Thanks so much for your donations. I was so excited to invite you that I forgot to clarify something - you can play with the animals and all, but this is also an opportunity for you to learn about how to care for them."
     host "No, it's ok! Actually, can I work here?"
 
-    show guest smug
+    show guest standing talking smug:
+        xzoom -1
     guest "Getting ahead of ourselves here, aren't we? You haven't even started learning about any of this."
 
-    show guest
+    show guest standing:
+        xzoom 1
     friend "Come on, don't berate her like that."
 
     show host proud
-    host "That's right. Also, I may already know a thing or two."
+    host "Yeah. Also, I may already know a thing or two."
 
     scene bg black with Dissolve(.5)
     pause 1
@@ -459,7 +462,7 @@ label act5:
     guest "By the way..."
 
     scene bg black with Dissolve(.5)
-    pause 2
+    pause 1
     guest "Does Meow Meadow have multiplayer support?"
 
     return
