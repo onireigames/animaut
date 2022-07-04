@@ -11,20 +11,20 @@ define unknown = Character("<Unknown>", who_color="#E500FF")
 # The game starts here.
 
 label start:
-    play music ocean
+    play ambience ocean fadein 1.0
     scene bg intro
     "How long will I keep failing...?"
     "Why am I even doing this to myself...?"
     scene bg intro closeup with Dissolve(1)
     "I just need some time to reflect..."
+    "Maybe I am a masochist after all..."
 
-    stop music
-    scene bg guestroom with Dissolve(1)
-
-    "Maybe I am a masochist after all."
+    stop ambience fadeout 3.0
+    scene black with Dissolve(1)
     "At least this time it's going way better. I got this!"
-    pause 1
 
+    pause 1
+    scene bg guestroom
     show guest sitting frustrated at left with hpunch
     guest "Ugh! Not again!"
     "...I don't got this."
@@ -124,17 +124,20 @@ label start:
     "I wish. Even if she were, she plays only slow-paced games like Meow Meadow. I don't get what she sees in them."
 
     host " > {i}No{/i}"
-    "This isn't like her at all. At least she didn't notice my slip-up about being a delinquent. Or she's just used to it by now..."
+    "This isn't like her at all. Has she changed in the past few months that we haven't talked?"
+    "At least she didn't notice my slip-up about being a delinquent. Or she's just used to it by now..."
     show guest sitting nervous
     host " > {i}Sorry for distracting you, forget about this.{/i}\n > {i}Goodnight!{/i}"
 
     guest " > {i}...{/i}"
     show guest sitting frustrated
-    guest " > {i}goodnight my ass{/i}\n > {i}youre not going to sleep till youve told me whats up{/i}"
+    guest " > {i}goodnight my ass{/i}\n > {i}you came here just to say bye?{/i}"
+    guest " > {i}youre not going to sleep till youve told me whats up{/i}"
 
     show guest sitting nervous
     host " > {i}I just felt like I was dying. I wasn't thinking straight because I had just woken up.{/i}"
     guest " > {i}and you messaged me instead of calling an ambulance?{/i}"
+    guest " > {i}i mean im glad youre ok{/i}\n > {i}you are, right?{/i}"
 
     host " > {i}I wasn't actually dying! I only had to calm down.{/i}"
     show guest sitting
@@ -144,7 +147,7 @@ label start:
     guest " > {i}why dont you just marry me then?{/i}"
     show guest sitting nervous
     guest " > {i}jk jk{/i}"
-    "What am I doing?! This isn't the time to joke around."
+    "What am I doing?! This was a stupid joke."
 
     show guest sitting
     host " > {i}Sorry if it's like I was using you or something{/i}\n > {i}I tried everything else before that{/i}"
@@ -158,6 +161,7 @@ label start:
 label act2:
     host "Everything else - I close my eyes..."
 
+    play ambience desert fadein 1.0
     scene bg host oasis with Dissolve(.5)
     pause .5
 
@@ -181,7 +185,7 @@ label act2:
     show guest armor talking smile
     guest "Relax, you aren't bothering me."
     show guest armor
-    guest "If anything, she only interrupted my torture with that godawful level."
+    "If anything, she only interrupted my torture with that godawful level."
     show guest armor talking smile
     guest "You're actually doing it too rarely."
     show guest armor
@@ -312,6 +316,7 @@ label act2:
     show host armor talking sad
     host "Maybe. But I thought I would get better over time, not worse."
 
+    stop ambience fadeout 5.0
     scene bg black
     with Dissolve(.5)
     pause .5
