@@ -11,17 +11,16 @@ define unknown = Character("<Unknown>", who_color="#E500FF")
 # The game starts here.
 
 label start:
-    "{b}<MUSIC: Vague ambient sounds that give a sense of emptiness>{/b}"
-
+    play music ocean
     scene bg intro
     "How long will I keep failing...?"
     "Why am I even doing this to myself...?"
     scene bg intro closeup with Dissolve(1)
     "I just need some time to reflect..."
 
+    stop music
     scene bg guestroom with Dissolve(1)
 
-    "{b}<MUSIC: Chill, either with a fast and light bass melody or something that emulates the same feel, think {a=https://youtu.be/ZZ-mtVyjBqI}this{/a} or perhaps the chill tracks from {a=https://youtu.be/5-K8R1hDG9E}here{/a}>{/b}"
     "Maybe I am a masochist after all."
     "At least this time it's going way better. I got this!"
     pause 1
