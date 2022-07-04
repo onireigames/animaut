@@ -117,7 +117,7 @@ label start:
 
     guest " > {i}need help with something?{/i}"
     host " > {i}No{/i}"
-    guest " > {i}dont tell me you forgot to study too{/i}"
+    guest " > {i}dont tell me you forgot to study for something too{/i}"
     "Who am I kidding?! If there's anyone crazy enough to prepare weeks in advance, it's her."
 
     guest " > {i}bored?{/i}"
@@ -176,7 +176,25 @@ label act2:
     host "You were the only one who was awake at this time."
     "I can't argue with that..."
     show guest armor talking
-    guest "Alright, alright. So, what are you up to now? Going to sleep?"
+    guest "That was your only reason?"
+    show guest armor
+    host "Okay, you weren't the {i}only{/i} one who was awake, there are a few others. I just didn't want to bother them."
+    host "Wait! I didn't mean it like that! It's not like I wanted to bother you."
+    show guest armor talking smile
+    guest "Relax, you aren't bothering me."
+    show guest armor
+    guest "If anything, she only interrupted my torture with that godawful level."
+    show guest armor talking smile
+    guest "You're actually doing it too rarely."
+    show guest armor
+    host "Doing what too rarely?"
+    show guest armor talking
+    guest "Talking to me."
+    show guest armor
+    host "I'm sorry!"
+    show guest armor talking
+    guest "Whatever. I'm guilty of the same."
+    guest "Anyway, what are you up to now? Going to sleep?"
     show guest armor
     host "I started playing to help get my mind off some things."
     "{b}<There might be a transition into [guest]-o-vision - she's feeling around, sensing only a little part of this oasis>{/b}"
@@ -316,7 +334,7 @@ label act2:
 
 
 label act3:
-    scene bg beach
+    scene bg beach first
     with Dissolve(.5)
     pause .5
 
@@ -330,26 +348,34 @@ label act3:
     guest "Look, I don't want you to say anything you'll regret in the morning. Let's just go to sleep."
     host "It was an accident. I was helping my grandparents out, digging into a compost pile."
     "Is she even listening? Also, compost pile?!"
-    host "I heard some strange squeaking coming out of it. I didn't know what it was and didn't think too much of it. I was so stupid..."
+    host "I heard some weird squeaking coming out of it. I didn't know what it was and didn't think too much of it. I was so stupid..."
 
-    "{b}<Dark clouds gather in the background>{/b}"
-    host "I kept digging despite it."
-    "{b}<The clouds cover almost the whole sky>{/b}"
+    scene bg beach second with Dissolve(.5)
+    pause .5
+    host "I kept digging despite the sounds."
     host "I didn't know there were mice hidden there."
     "Mice?! In there?!"
-    "{b}<It starts raining blood>{/b}"
-    host "I still vividly remember how it looked. I don't want to remind myself of that moment, sorry. But, only one of them was left alive..."
-    host "It was a pup that still couldn't even see."
-    "{b}<She smiles a little, her armor is slowly falling apart, and there is a ray of light in the distance, and it isn't raining as much>{/b}"
-    host "I took Beep inside, protected him from my cat, gave him special milk..."
+    scene bg beach third with Dissolve(.5)
+    pause .5
+    host "Even worse, it was a mother with her babies."
+    host "I don't want to remind myself of that, sorry."
+    host "One of the pups in there was still alive, at least..."
+    scene bg beach fourth with Dissolve(.5)
+    pause .5
+    host "I named him Beep."
+    host "I took him inside, protected him from my cat, gave him special milk..."
     host "I even had to make sure he was warm because it was winter. Once, I panicked that he had frozen to death. I was sure he was a goner. He was alright, fortunately."
+    host "He was so cute."
     host "After some time, he grew up and could finally see."
-    "{b}<The ray of light starts disappearing and the rain increases in intensity again>{/b}"
     host "But then, he jumped out of his box and fell onto the floor."
     host "My first thought was that my cat would get to him, so I stepped back without looking..."
-    "{b}<She melts with her armour gone, and the tide rises up to her>{/b}"
+    host "Sorry..."
+    scene bg beach fifth with Dissolve(.5)
+    pause .5
     "I thought I was prepared for the worst, but I don't know what to say even about this..."
     "I feel like I can only stare."
+    scene bg beach sixth with Dissolve(.5)
+    pause .5
     "Come on, do something..."
 
     scene black with Pixellate(.5, 5)
