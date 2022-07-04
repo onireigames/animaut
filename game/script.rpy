@@ -345,7 +345,7 @@ label act3:
     guest "What?! And I hope it's not too late to say this, but our conversation isn't encrypted."
     "What have I dragged myself into?!"
     host "It doesn't matter."
-    guest "Look, I don't want you to say anything you'll regret in the morning. Let's just go to sleep."
+    guest "Look, I don't want you to say anything you'll regret later. Let's just go to sleep."
     host "It was an accident. I was helping my grandparents out, digging into a compost pile."
     "Is she even listening? Also, compost pile?!"
     host "I heard some weird squeaking coming out of it. I didn't know what it was and didn't think too much of it. I was so stupid..."
@@ -429,12 +429,14 @@ label act4:
     pause 1
     "Actually, I do know what I'm doing - one of those things you tend to regret in the morning, when you can finally think clearly."
 
-    pause 3
-    "{b}<The background changes to [host]'s arm reaching out from under the water and grabbing [guest]'s forearm firmly>{/b}"
-    host " > {i}Hi{/i}" with vpunch
+    pause .5
+    scene bg guest reach hand1 with Dissolve(2)
+    pause .5
+    scene bg guest reach arm1 with vpunch
+    host " > {i}Hi{/i}"
     pause 1
-    "{b}<The background changes yet again, to [host]'s other arm doing the same>{/b}"
-    host " > {i}Can we talk?{/i}" with vpunch
+    scene bg guest reach arm2 with vpunch
+    host " > {i}Can we talk?{/i}"
 
     scene black with Dissolve(.5)
     pause .5
