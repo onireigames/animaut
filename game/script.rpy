@@ -197,7 +197,6 @@ label act2:
     guest "Anyway, what are you up to now? Going to sleep?"
     show guest armor
     host "I started playing to help get my mind off some things."
-    "{b}<There might be a transition into [guest]-o-vision - she's feeling around, sensing only a little part of this oasis>{/b}"
     "I don't even need to ask what she's playing. I can't relate, but if Meow Meadow is helping her calm down, maybe it's not so pointless after all."
 
     show bg host desert with Dissolve(.5)
@@ -239,7 +238,6 @@ label act2:
     show guest armor talking
     guest "That sucks..."
     show guest armor
-    "{b}<More [guest]-o-vision?>{/b}"
     "I knew she was the shy type, but that's shyness on another level... I don't know what to say to comfort her, though."
 
     show host armor talking lookside
@@ -320,7 +318,6 @@ label act2:
     with Dissolve(.5)
     pause .5
 
-    "{b}<More [guest]-o-vision?>{/b}"
     guest "Well, why didn't you go back when you started feeling worse again? Or did you keep going?"
     host "I stopped going and I didn't want to go again."
     host "Before you say anything - I know, it was stupid."
