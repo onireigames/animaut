@@ -16,7 +16,7 @@ label start:
     scene bg intro
     "How long will I keep failing...?"
     "Why am I even doing this to myself...?"
-    "{b}<A close-up image of her>{/b}"
+    scene bg intro closeup with Dissolve(1)
     "I just need some time to reflect..."
 
     scene bg guestroom with Dissolve(1)
@@ -166,7 +166,6 @@ label act2:
     show host armor at right
     host "...I breathe slowly, and imagine I'm in a nice place with trees. I'd play some ambient sounds too if I could do that quickly enough."
 
-    "{b}<The oasis dissolves a little>{/b}"
     host "But it wasn't enough this time... so I wanted to talk to you."
     show guest armor talking
     guest "Why me?"
@@ -494,8 +493,6 @@ label act5:
 
     scene bg black with Dissolve(.5)
     pause 1
-
-    "{b}<The background is something abstract or just black>{/b}"
     "...She did know a thing or two. Actually, probably three or four."
 
     scene bg handholding with Dissolve(.5)
