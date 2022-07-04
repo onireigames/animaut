@@ -563,7 +563,12 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only] for {a=https://visualnovel.neocities.org/}VN Cup{/a}.\n\n[renpy.license!t]")
+            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+
+            label ""
+            label "Credits"
+            if gui.credits:
+                text "[gui.credits!t]\n"
 
 
 style about_label is gui_label

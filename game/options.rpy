@@ -30,6 +30,18 @@ define config.version = "1.0"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+This is an entry for {a=https://visualnovel.neocities.org/}VN Cup{/a}, at the mercy of rara.
+The source code is at {a=https://github.com/onireigames/animaut}GitHub{/a}.
+""")
+
+
+define gui.credits = _("""
+Ambience/SFX from ZapSplat, edited with Audacity:
+ - {a=https://www.zapsplat.com/music/ambience-english-coast-cornwall-beach-waves-water-sea-seagulls-crashing-water/}Ocean{/a} by {a=zapsplat.com/author/noise-creations/}noise-creations{/a}
+ - {a=https://www.zapsplat.com/music/science-fiction-planet-atmosphere-desolate-wind-barren-desert/}Desert wind{/a}
+ - {a=https://www.zapsplat.com/music/distant-thunder-and-lightning-with-very-light-rain/}Thunder + a bit of rain{/a}
+ - {a=https://www.zapsplat.com/music/distant-rumble-of-thunder-with-light-rain-and-wind-1/}Rain + thunder{/a}
+ - {a=https://www.zapsplat.com/music/a-quiet-tropical-afternoon-atmo-with-birds-2/}Birb{/a} by {a=https://www.zapsplat.com/author/smartsound/}SmartSound{/a}
 """)
 
 
