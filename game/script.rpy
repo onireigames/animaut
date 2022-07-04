@@ -375,16 +375,16 @@ label act3:
     host "After some time, he grew up and could finally see."
     host "But then, he jumped out of his box and fell onto the floor."
     host "My first thought was that my cat would get to him."
-    scene bg beach fifth with Dissolve(.5)
-    pause .5
+    scene bg beach third with Dissolve(.5)
     host "I stepped back without looking and..."
+    scene bg beach fifth with Dissolve(2)
     host "..."
     host "Sorry..."
     "I thought I was prepared for the worst, but I don't know what to say even about this..."
-    "I feel like I can only stare."
+    "Of all times, why is my head empty now?"
     scene bg beach sixth with Dissolve(.5)
     pause .5
-    "Come on, do something..."
+    "Think, think..."
 
     play ambience heartbeat fadein 3.0
     scene black with Pixellate(.5, 5)
@@ -415,10 +415,12 @@ label act4:
     "No matter how many times I check, it won't make her reappear."
     "{i}Any rational person would just go to sleep, not spend 2 hours waiting for nothing like you.{/i}"
     "But this is also one of those moments where no matter how heavy my eyelids feel, I can't fall asleep anyway. If there's anything irrational here, it's the human body."
+    "What a rational person would do is to say something quickly, not let her go away like this."
 
     play ambience ocean fadein 5.0
     scene bg guest lying with Dissolve(3)
     pause 1
+    stop extra_ambience fadeout 5.0
 
     "{i}You shouldn't have asked her so much and you shouldn't have ignored her. She'll never forgive you for being so nosy and indifferent.{/i}"
     "Too nosy and too indifferent - what an oxymoron. It's true, though. How do I even manage to act like this?!"
@@ -434,6 +436,7 @@ label act4:
 
     scene bg guest reach with Dissolve(1)
     pause .5
+    stop ambience
     guest " > {i}are you still there?{/i}"
     guest " > {i}well, obviously not{/i}\n > {i}but i dont know what else to do{/i}"
     "(Nevermind, I don't even know what I'm doing...)"
@@ -441,11 +444,13 @@ label act4:
 
     pause 1
     "Actually, I do know what I'm doing - one of those things you tend to regret in the morning, when you can finally think clearly."
+    "She's obviously asleep after so much time."
+    "Or, at least, she'd better be. Who knows what else she might have done instead..."
 
-    pause .5
+    pause 1
+    play ambience heartbeat
     scene bg guest reach hand1 with Dissolve(2)
     pause .5
-    stop ambience
     scene bg guest reach arm1 with vpunch
     host " > {i}Hi{/i}"
     pause 1
@@ -481,9 +486,9 @@ label act4:
 
 
 label act5:
-    pause 1
-    scene bg fps
-    with Dissolve(1)
+    scene black with Dissolve(1)
+    "[[A few days later...]"
+    scene bg fps with Dissolve(1)
     pause .5
 
     show friend standing talking at right
