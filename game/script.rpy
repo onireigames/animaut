@@ -3,8 +3,8 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define host = Character("Dannie", who_color="#C9A362")
 define guest = Character("Karina", who_color="#A975AC")
+define host = Character("Dannie", who_color="#A96332")
 define friend = Character("Darcy", who_color="#629A18")
 define unknown = Character("<Unknown>", who_color="#E500FF")
 
@@ -19,11 +19,12 @@ label start:
     "I just need some time to reflect..."
     "Maybe I am a masochist after all..."
 
-    stop ambience fadeout 3.0
+    play ambience heartbeat fadein 3.0
     scene black with Dissolve(1)
     "At least this time it's going way better. I got this!"
 
     pause 1
+    stop ambience
     scene bg guestroom
     show guest sitting frustrated at left with hpunch
     guest "Ugh! Not again!"
@@ -147,11 +148,12 @@ label start:
     guest " > {i}why dont you just marry me then?{/i}"
     show guest sitting nervous
     guest " > {i}jk jk{/i}"
-    "What am I doing?! This was a stupid joke."
+    "What am I doing?! What a a stupid joke."
 
     show guest sitting
     host " > {i}Sorry if it's like I was using you or something{/i}\n > {i}I tried everything else before that{/i}"
 
+    play ambience heartbeat fadein 1.0
     scene bg black with Dissolve(.5)
     pause 1
     guest " > {i}everything else?{/i}"
@@ -185,7 +187,7 @@ label act2:
     show guest armor talking smile
     guest "Relax, you aren't bothering me."
     show guest armor
-    "If anything, she only interrupted my torture with that godawful level."
+    "If anything, she only interrupted my little self-torture session."
     show guest armor talking smile
     guest "You're actually doing it too rarely."
     show guest armor
@@ -316,7 +318,7 @@ label act2:
     show host armor talking sad
     host "Maybe. But I thought I would get better over time, not worse."
 
-    stop ambience fadeout 5.0
+    play ambience heartbeat fadein 3.0
     scene bg black
     with Dissolve(.5)
     pause .5
@@ -384,9 +386,9 @@ label act3:
     pause .5
     "Come on, do something..."
 
+    play ambience heartbeat fadein 3.0
     scene black with Pixellate(.5, 5)
     pause .5
-    stop extra_ambience fadeout 3.0
     host " > {i}Sorry, I didn't want to bother you with this...{/i}\n > {i}It's so late, sorry for keeping you up{/i}"
 
     "Why is she sorry?! It was me who didn't do anything about this."
@@ -422,6 +424,7 @@ label act4:
     "And let me guess - if I told [friend] about this, she'd tell me I'm being too hard on myself. \"Treat yourself like you'd treat your best friend\" or something - {i}yeah, right{/i}."
     "{i}Maybe her little advice, would actually make sense if you didn't treat your friends even worse than yourself.{/i}"
 
+    play ambience heartbeat fadein 2.0
     scene bg black
     pause 2
     "..."

@@ -34,7 +34,6 @@ This is an entry for {a=https://visualnovel.neocities.org/}VN Cup{/a}, at the me
 The source code is at {a=https://github.com/onireigames/animaut}GitHub{/a}.
 """)
 
-
 define gui.credits = _("""
 Ambience/SFX from ZapSplat, edited with Audacity:
  - {a=https://www.zapsplat.com/music/ambience-english-coast-cornwall-beach-waves-water-sea-seagulls-crashing-water/}Ocean{/a} by {a=zapsplat.com/author/noise-creations/}noise-creations{/a}
@@ -42,6 +41,7 @@ Ambience/SFX from ZapSplat, edited with Audacity:
  - {a=https://www.zapsplat.com/music/distant-thunder-and-lightning-with-very-light-rain/}Thunder + a bit of rain{/a}
  - {a=https://www.zapsplat.com/music/distant-rumble-of-thunder-with-light-rain-and-wind-1/}Rain + thunder{/a}
  - {a=https://www.zapsplat.com/music/a-quiet-tropical-afternoon-atmo-with-birds-2/}Birb{/a} by {a=https://www.zapsplat.com/author/smartsound/}SmartSound{/a}
+ - {a=https://www.zapsplat.com/music/deep-slow-heartbeat/}Heartbeat{/a} by {a=https://www.zapsplat.com/author/adam-a-johnson/}Adam A Johnson{/a}
 """)
 
 
