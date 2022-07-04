@@ -48,7 +48,7 @@ label start:
     "And I feel like I'm forgetting something else, too. Maybe it's just a weird sense of deja-vu."
 
     show guest sitting determined
-    guest "Alright, let's go! Last chance!"
+    guest "Whatever! Let's go! Last chance!"
 
     "It's muscle memory at this point, I can't possibly mess it up."
     show guest sitting
@@ -326,7 +326,9 @@ label act2:
     host "Before you say anything - I know, it was stupid."
     guest "If you know it was a mistake, why are you talking to me instead of to someone who knows what they're doing?"
     host "It's not so simple! No matter how much I wanted it to work, I couldn't be honest with them."
-    guest "Really? What you said wasn't so bad. You've probably heard this before, but there's nothing you could have done to prevent any of that."
+    guest "Really? What you said wasn't so bad."
+    host "..."
+    guest "And you've probably heard this before, but there's nothing you could have done to prevent any of that."
     guest "If anything, you probably handled everything better than present me would."
     host "Yeah, I've heard this before, and I think I've already forgiven myself for that. Maybe I'd be okay with myself..."
 
@@ -334,16 +336,17 @@ label act2:
 
 
 label act3:
+    play ambience thunder fadein 5.0
     scene bg beach first
     with Dissolve(.5)
     pause .5
 
     host "...if I weren't a murderer - just as bad as my sister."
-    "...This has to be a joke."
+    "This has to be a joke."
     "But unlike me, she doesn't make such badly timed jokes."
 
     guest "What?! And I hope it's not too late to say this, but our conversation isn't encrypted."
-    "What have I dragged myself into?!"
+    "What have I dragged us into?"
     host "It doesn't matter."
     guest "Look, I don't want you to say anything you'll regret later. Let's just go to sleep."
     host "It was an accident. I was helping my grandparents out, digging into a compost pile."
@@ -355,6 +358,7 @@ label act3:
     host "I kept digging despite the sounds."
     host "I didn't know there were mice hidden there."
     "Mice?! In there?!"
+    play extra_ambience rain fadein 3.0
     scene bg beach third with Dissolve(.5)
     pause .5
     host "Even worse, it was a mother with her babies."
@@ -368,10 +372,12 @@ label act3:
     host "He was so cute."
     host "After some time, he grew up and could finally see."
     host "But then, he jumped out of his box and fell onto the floor."
-    host "My first thought was that my cat would get to him, so I stepped back without looking..."
-    host "Sorry..."
+    host "My first thought was that my cat would get to him."
     scene bg beach fifth with Dissolve(.5)
     pause .5
+    host "I stepped back without looking and..."
+    host "..."
+    host "Sorry..."
     "I thought I was prepared for the worst, but I don't know what to say even about this..."
     "I feel like I can only stare."
     scene bg beach sixth with Dissolve(.5)
@@ -380,6 +386,7 @@ label act3:
 
     scene black with Pixellate(.5, 5)
     pause .5
+    stop extra_ambience fadeout 3.0
     host " > {i}Sorry, I didn't want to bother you with this...{/i}\n > {i}It's so late, sorry for keeping you up{/i}"
 
     "Why is she sorry?! It was me who didn't do anything about this."
@@ -391,6 +398,7 @@ label act3:
     pause 1
     guest " > {i}wait{/i}"
 
+    stop ambience fadeout 3.0
     pause 3
     "She's gone, isn't she?"
 
@@ -405,6 +413,7 @@ label act4:
     "{i}Any rational person would just go to sleep, not spend 2 hours waiting for nothing like you.{/i}"
     "But this is also one of those moments where no matter how heavy my eyelids feel, I can't fall asleep anyway. If there's anything irrational here, it's the human body."
 
+    play ambience ocean fadein 5.0
     scene bg guest lying with Dissolve(3)
     pause 1
 
@@ -432,6 +441,7 @@ label act4:
     pause .5
     scene bg guest reach hand1 with Dissolve(2)
     pause .5
+    stop ambience
     scene bg guest reach arm1 with vpunch
     host " > {i}Hi{/i}"
     pause 1
