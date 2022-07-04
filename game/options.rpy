@@ -44,6 +44,8 @@ Ambience/SFX from ZapSplat, edited with Audacity:
  - {a=https://www.zapsplat.com/music/deep-slow-heartbeat/}Heartbeat{/a} by {a=https://www.zapsplat.com/author/adam-a-johnson/}Adam A Johnson{/a}
  - {a=https://www.zapsplat.com/music/city-ambience-background-noise-of-traffic-city-hum/}Urban noise{/a} by {a=https://www.zapsplat.com/author/tom-chapman/}Tom Chapman{/a}
  - {a=https://www.zapsplat.com/music/alarm-clock-ticking/}Clock{/a} by {a=https://www.zapsplat.com/author/thesoundpacktree/}The Sound Pack Tree{/a}
+
+The character visual designs are a reference to {a=https://twitter.com/WifuBox}Wifu-Box{/a} (with permission).
 """)
 
 
