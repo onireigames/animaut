@@ -24,7 +24,7 @@ label start:
     "At least this time it's going way better. I got this!"
 
     pause 1
-    stop ambience
+    play ambience urban
     scene bg guestroom
     show guest sitting frustrated at left with hpunch
     guest "Ugh! Not again!"
@@ -408,6 +408,7 @@ label act3:
 
 
 label act4:
+    play ambience urban fadein 1.0
     scene bg guest bed with Pixellate(.5, 5)
     pause .5
 
@@ -422,7 +423,7 @@ label act4:
     "{i}You shouldn't have asked her so much and you shouldn't have ignored her. She'll never forgive you for being so nosy and indifferent.{/i}"
     "Too nosy and too indifferent - what an oxymoron. It's true, though. How do I even manage to act like this?!"
     "And let me guess - if I told [friend] about this, she'd tell me I'm being too hard on myself. \"Treat yourself like you'd treat your best friend\" or something - {i}yeah, right{/i}."
-    "{i}Maybe her little advice, would actually make sense if you didn't treat your friends even worse than yourself.{/i}"
+    "{i}Maybe her little advice would actually make sense if you didn't treat your friends even worse than yourself.{/i}"
 
     play ambience heartbeat fadein 2.0
     scene bg black

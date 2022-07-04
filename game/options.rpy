@@ -42,6 +42,7 @@ Ambience/SFX from ZapSplat, edited with Audacity:
  - {a=https://www.zapsplat.com/music/distant-rumble-of-thunder-with-light-rain-and-wind-1/}Rain + thunder{/a}
  - {a=https://www.zapsplat.com/music/a-quiet-tropical-afternoon-atmo-with-birds-2/}Birb{/a} by {a=https://www.zapsplat.com/author/smartsound/}SmartSound{/a}
  - {a=https://www.zapsplat.com/music/deep-slow-heartbeat/}Heartbeat{/a} by {a=https://www.zapsplat.com/author/adam-a-johnson/}Adam A Johnson{/a}
+ - {a=https://www.zapsplat.com/music/city-ambience-background-noise-of-traffic-city-hum/}Urban noise{/a} by {a=https://www.zapsplat.com/author/tom-chapman/}Tom Chapman{/a}
 """)
 
 
