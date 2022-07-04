@@ -457,18 +457,19 @@ label act4:
 
     guest " > {i}youre still up?!{/i}\n > {i}but yes, please, let's talk{/i}"
 
+    play ambience clock fadein 3.0
     scene bg clocks with Dissolve(3)
     pause .5
-    "{i}I don't know how much time we spent talking, but she fell asleep a little after the sun had come up.{/i}"
-    "It's like whatever time it was, it sure passed quickly."
-    "I wish I had got to know her better sooner. That's what I get for keeping my distance from everyone."
+    "{i}I don't remember how much time we spent talking, but I know she fell asleep a little after the sun had come up.{/i}"
+    "{i}It felt like like whatever time it must have been, it sure passed quickly.{/i}"
+    "I wish I'd got to know her better sooner. That's what I get for keeping my distance from everyone."
     "Wait, why am I even thinking this? It's not like me... Maybe I'm just too sleep-deprived."
     "Whatever. I want to talk to her more later anyway."
 
     play ambience green fadein 3.0
     scene bg lappillow with Dissolve(2)
     pause .5
-    guest "Sleep well - or at least as well as you possibly can after pulling an all-nighter like this."
+    guest "Sleep well - or at least as well as you possibly can after all this."
     guest "And, by the way..."
 
     scene black with Dissolve(.5)
