@@ -455,8 +455,13 @@ label act4:
 
     scene bg clocks with Dissolve(3)
     pause .5
-    "{i}I don't know how much time we spent talking, but she fell asleep a little after the sun had risen{/i}"
+    "{i}I don't know how much time we spent talking, but she fell asleep a little after the sun had come up.{/i}"
+    "It's like whatever time it was, it sure passed quickly."
+    "I wish I had got to know her better sooner. That's what I get for keeping my distance from everyone."
+    "Wait, why am I even thinking this? It's not like me... Maybe I'm just too sleep-deprived."
+    "Whatever. I want to talk to her more later anyway."
 
+    play ambience green fadein 3.0
     scene bg lappillow with Dissolve(2)
     pause .5
     guest "Sleep well - or at least as well as you possibly can after pulling an all-nighter like this."
@@ -464,18 +469,20 @@ label act4:
 
     scene black with Dissolve(.5)
     pause .5
-    guest " > {i}when you wake up -- theres something you might be interested in if youre free in a few days{/i}"
+    guest " > {i}theres something you might be interested in if youre free in a few days{/i}"
+    guest " > {i}we should talk about it tomorrow{/i}"
 
     jump act5
 
 
 label act5:
+    pause 1
     scene bg fps
-    with Dissolve(.5)
+    with Dissolve(1)
     pause .5
 
     show friend standing talking at right
-    friend "Oh, you both made it! Welcome to Fox Peak Sanctuary."
+    friend "Hey, you both made it! Welcome to Fox Peak Sanctuary."
 
     show friend standing
     show guest standing talking at center
@@ -497,11 +504,13 @@ label act5:
         xzoom -1
     guest "Getting ahead of ourselves here, aren't we? You haven't even started learning about any of this."
 
+    show friend standing talking
     show host standing smiling
     show guest standing:
         xzoom 1
     friend "Come on, don't berate her like that."
 
+    show friend standing
     show host standing talking smiling eyesclosed
     host "Yeah. Also, I may already know a thing or two."
 
@@ -509,7 +518,7 @@ label act5:
     pause 1
     "...She did know a thing or two. Actually, probably three or four."
 
-    scene bg handholding with Dissolve(.5)
+    scene bg handholding with Dissolve(2)
     pause .5
 
     host "Thanks so much for inviting me here! I hope we can come back sometime."
@@ -519,5 +528,6 @@ label act5:
     scene bg black with Dissolve(.5)
     pause 1
     guest "Does Meow Meadow have multiplayer support?"
+    scene bg black with Dissolve(1)
 
     return
